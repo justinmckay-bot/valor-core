@@ -14,6 +14,9 @@ You are reading the shared operating manual for Valor Church staff. This repo is
 - **convictions.md**: Pull when handling theological, doctrinal, ministry philosophy, or ecclesiological content. Required reading before any sermon prep, teaching content, doctrinal statement, or pastoral decision.
 - **stories.md**: Pull when copy needs a story. Match by tag. Always check the consent line before public use.
 - **references.md**: Pull for scripture passages, frameworks, books, mental models, voices Justin follows, platforms, and the Valor glossary.
+- **marketing/CLAUDE.md**: Pull when working on any external digital channel (Instagram, YouTube, Facebook, WordPress, ads, SEO, mailers). Scope, collaborators, cadence, brand rules, and voice rules specific to marketing.
+- **marketing/WORKFLOWS.md**: Pull when running the sermon-to-social pipeline or any recurring marketing production task. The step-by-step "how the work actually runs" layer.
+- **marketing/YOUTUBE_PLAYBOOK.md**: Pull when working on YouTube strategy, phase targets, the scoreboard, Chris's freedom corridor, or the working tools setup. Owned by Chris Jones.
 
 ## Hard rules
 
