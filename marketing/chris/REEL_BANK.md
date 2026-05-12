@@ -97,3 +97,101 @@ valor.church
 #ValorChurch #Arvada #StopDrifting #Home #Fatherlessness #GodsDesign #BiblicalLiving #DenverChurch #ChurchPlant #ColoradoChurch
 
 ---
+
+## The Essential Gospel | 1 Cor 15:50-58 — May 8, 2026
+
+### Reel 1 — No Retirement in the Kingdom of God
+- **Sermon:** The Essential Gospel | 1 Cor 15:50-58
+- **Date:** May 8, 2026
+- **Duration:** 46 seconds
+- **Timestamp:** ~32:13
+- **Strength tier:** A -- clean hook, strong payoff line, on-brand call to perseverance
+- **Status:** Downloaded, not yet posted
+- **Recommended platform:** Bank for filler (YouTube Shorts / TikTok)
+
+**Caption:**
+You can retire from your job. You cannot retire from the kingdom of God.
+
+There are moments of sabbath and rest. But the believer works until their last breath.
+
+So whatever you do, do it. Your labor is not in vain.
+
+valor.church
+
+#ValorChurch #Arvada #StopDrifting #EssentialGospel #NoRetirement #BiblicalLiving #DenverChurch #ChurchPlant #ColoradoChurch #Shorts
+
+---
+
+### Reel 2 — You Have Courage and Valor
+- **Sermon:** The Essential Gospel | 1 Cor 15:50-58
+- **Date:** May 8, 2026
+- **Duration:** 46 seconds
+- **Timestamp:** ~27:51
+- **Strength tier:** A -- strong hook, ties church name to the message, ends on "in the end I win"
+- **Status:** Downloaded, not yet posted
+- **Recommended platform:** Bank for filler (YouTube Shorts / TikTok)
+
+**Caption:**
+We didn't pick this name randomly.
+
+Valor. You have courage and valor. Christian, we have not been given a timid hope.
+
+Whatever comes at you, whatever tries to stand in your way -- you have nothing on me. Because in the end, I win.
+
+That's not arrogance. That's resurrection confidence.
+
+valor.church
+
+#ValorChurch #Arvada #StopDrifting #EssentialGospel #Valor #ResurrectionConfidence #DenverChurch #ChurchPlant #ColoradoChurch #Shorts
+
+---
+
+### Reel 3 — Your Work Today Echoes in Eternity
+- **Sermon:** The Essential Gospel | 1 Cor 15:50-58
+- **Date:** May 8, 2026
+- **Duration:** 55 seconds
+- **Timestamp:** ~30:32
+- **Strength tier:** A -- broad hook, speaks to every vocation, strong payoff line
+- **Status:** Downloaded, not yet posted
+- **Recommended platform:** Bank for filler (YouTube Shorts / TikTok)
+
+**Caption:**
+Some of you are dentists. Some of you are stay-at-home moms. Some of you are realtors.
+
+It doesn't matter. Because you will live forever, what you do now matters. From the highest calling to the most common one.
+
+Do it with excellence. Do it with integrity. Do it with a sense of urgency.
+
+Whatever I do today will echo in eternity.
+
+valor.church
+
+#ValorChurch #Arvada #StopDrifting #EssentialGospel #Eternity #DoItWithExcellence #DenverChurch #ChurchPlant #ColoradoChurch #Shorts
+
+---
+
+### Reel 4 — Death Has No Fangs: Christ Removed the Sting Forever
+- **Sermon:** The Essential Gospel | 1 Cor 15:50-58
+- **Date:** May 8, 2026
+- **Duration:** 59 seconds
+- **Timestamp:** ~24:23
+- **Strength tier:** A -- strong illustration, clear payoff, ends on resurrection confidence
+- **Status:** Downloaded, not yet posted
+- **Recommended platform:** Bank for filler (YouTube Shorts / TikTok)
+
+**Caption:**
+The cobra looks powerful. Hood up, striking, terrifying.
+
+But before snake charmers ever put them on display, they pull the fangs. No venom. No power. Just the appearance of a threat.
+
+And what Paul is saying to us is the same thing.
+
+Death looks powerful. But Christ already pulled its fangs.
+
+You win in the end because Christ won in the end and will win again.
+
+valor.church
+
+#ValorChurch #Arvada #StopDrifting #EssentialGospel #Resurrection #DeathWhereIsYourSting #DenverChurch #ChurchPlant #ColoradoChurch #Shorts
+
+---

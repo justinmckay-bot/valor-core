@@ -43,4 +43,4 @@ Weekly tracking for output, reach, and engagement. Output layer is the win Chris
 
 | Week of | Sermon uploaded | Reels banked | IG Reel posted | YT Shorts/TikTok filler | Notes |
 |---|---|---|---|---|---|
-| | | | | | |
+| May 11, 2026 | Yes -- Home | Mothers | 4 | Pending Instagram access | Pending TikTok/YT Shorts access | First week of pipeline. Valor email and Instagram credentials needed from Justin. TikTok setup pending Valor email. |
