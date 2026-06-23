@@ -1,0 +1,303 @@
+/* ============================================================
+   VALOR CHURCH — COLORS & TYPE
+   Source of truth for every PDF, Word doc, slide, social
+   graphic, and printed handout. Mirrors SKILL.md tokens.
+   ============================================================ */
+
+/* Fonts — Archivo + PT Serif ONLY. Never Helvetica, never system-ui.
+   Both families load from local brand files in fonts/. Archivo is the
+   variable font (covers all weights/widths in two files); PT Serif is
+   the static four-style set (regular, italic, bold, bold italic). */
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('fonts/Archivo-VariableFont_wdth_wght.ttf') format('truetype-variations'),
+       url('fonts/Archivo-VariableFont_wdth_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 62.5% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivo';
+  src: url('fonts/Archivo-Italic-VariableFont_wdth_wght.ttf') format('truetype-variations'),
+       url('fonts/Archivo-Italic-VariableFont_wdth_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 62.5% 125%;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/PTSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/PTSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/PTSerif-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Serif';
+  src: url('fonts/PTSerif-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- BRAND PALETTE ---------- */
+  /* Four official brand colors (from the brand color sheet) */
+  --brand-black:        #000000;   /* official brand black */
+  --brand-burgundy:     #4D3033;   /* primary accent — rails, badges, callouts */
+  --brand-khaki:        #9F936B;   /* official khaki (brand sheet) */
+  --brand-slate:        #3B4A50;   /* official cool slate (brand sheet, used sparingly) */
+
+  /* ---------- EXTENDED TOKENS (from SKILL.md) ---------- */
+  --black:              #0d0d0d;   /* Mode 1 background — softer than pure black */
+  --dark:               #1a1a1a;   /* headers, primary text, footer bars */
+  --burgundy:           #4D3033;   /* alias of --brand-burgundy */
+  --khaki:              #b5a97a;   /* working khaki — lighter rendering for screens */
+  --khaki-dim:          #8a7a55;   /* secondary khaki — URLs, subdued accents */
+  --white:              #ffffff;
+  --off-white:          #f7f4f0;   /* Mode 2 page background */
+  --warm-mid:           #ede8e0;   /* callout box background */
+  --rule-warm:          #cdc5bb;   /* write lines, warm dividers */
+  --body-text:          #2e2e2e;   /* all paragraph body copy */
+  --ghost:              #232323;   /* ghost V-mark stroke color (Mode 1) */
+  --subtext:            #aaaaaa;   /* small caption text on dark backgrounds */
+
+  /* ---------- SEMANTIC — Mode 1 (Dark Authority) ---------- */
+  --m1-bg:              var(--black);
+  --m1-fg:              var(--white);
+  --m1-fg-secondary:    var(--khaki);
+  --m1-rail:            var(--burgundy);
+  --m1-accent-strip:    var(--khaki);
+
+  /* ---------- SEMANTIC — Mode 2 (Warm Clarity) ---------- */
+  --m2-bg:              var(--off-white);
+  --m2-fg:              var(--body-text);
+  --m2-fg-emphasis:     var(--dark);
+  --m2-accent:          var(--burgundy);
+  --m2-callout-bg:      var(--warm-mid);
+  --m2-rule:            var(--rule-warm);
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --font-display:       'Archivo', 'Helvetica Neue', sans-serif;   /* Archivo Black/Bold for display + labels */
+  --font-body:          'PT Serif', 'Georgia', serif;              /* PT Serif for body + emphasis */
+
+  /* Weight aliases */
+  --w-archivo-regular:  400;   /* @kind font */
+  --w-archivo-medium:   500;   /* @kind font */
+  --w-archivo-semibold: 600;   /* @kind font */
+  --w-archivo-bold:     700;   /* @kind font */
+  --w-archivo-extra:    800;   /* @kind font */
+  --w-archivo-black:    900;   /* @kind font */
+  --w-serif-regular:    400;   /* @kind font */
+  --w-serif-bold:       700;   /* @kind font */
+
+  /* Type scale (mapped from SKILL.md print pt sizes — 1pt ≈ 1.333px) */
+  --t-display:          36px;   /* Mode 1 headline — Archivo Black */
+  --t-display-sm:       28px;   /* smaller Mode 1 / hero */
+  --t-series:           18px;   /* Mode 2 series title — Archivo Black */
+  --t-question:         17px;   /* PT Serif Bold 13pt → 17px */
+  --t-body:             15px;   /* PT Serif Regular 11pt → 15px */
+  --t-callout:          14px;   /* PT Serif Regular 10.5pt → 14px */
+  --t-framing:          15px;   /* PT Serif Italic — same as body */
+  --t-label:            10px;   /* Archivo Bold 7.5pt tracked +1.5 */
+  --t-field-label:      11px;   /* Archivo Bold 8pt tracked +1.5 */
+  --t-footer:           11px;   /* PT Serif Regular 8pt */
+  --t-wordmark:         28px;   /* Archivo Black 21pt → 28px */
+  --t-tagline:          11px;   /* PT Serif Italic 8.5pt */
+
+  /* Leading */
+  --lh-display:         1.0;    /* @kind font */
+  --lh-question:        1.30;   /* @kind font */
+  --lh-body:            1.55;   /* @kind font */
+  --lh-callout:         1.50;   /* @kind font */
+  --lh-tight:           1.15;   /* @kind font */
+
+  /* Tracking (letter-spacing for tracked labels) */
+  --tr-label:           0.14em;   /* @kind font */
+  --tr-field:           0.12em;   /* @kind font */
+
+  /* ---------- SPACING (SKILL.md tokens, converted px @96dpi) ---------- */
+  --space-xs:           8px;     /* 0.08in */
+  --space-sm:           14px;    /* 0.15in */
+  --space-md:           23px;    /* 0.24in */
+  --space-lg:           35px;    /* 0.36in */
+  --space-xl:           50px;    /* 0.52in */
+
+  /* ---------- STRUCTURE ---------- */
+  --rail-width:         6px;     /* burgundy left rail */
+  --rail-width-print:   0.055in;  /* @kind spacing */
+  --accent-strip:       4px;     /* khaki top strip */
+  --radius-badge:       2px;     /* never go above 2pt — softens crisp identity */
+  --radius-card:        4px;
+  --border-hair:        0.6px;
+  --rule-thin:          0.35px;
+  --double-rule-gap:    4px;     /* gap between khaki+dark in double rule */
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT STYLES
+   Use these classes on H1/H2/H3/p/etc, or copy into components.
+   ============================================================ */
+
+.valor-h1, .v-display {
+  font-family: var(--font-display);
+  font-weight: var(--w-archivo-black);
+  font-size: var(--t-display);
+  line-height: var(--lh-display);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.valor-h2, .v-series {
+  font-family: var(--font-display);
+  font-weight: var(--w-archivo-black);
+  font-size: var(--t-series);
+  line-height: var(--lh-tight);
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.valor-h3, .v-question {
+  font-family: var(--font-body);
+  font-weight: var(--w-serif-bold);
+  font-size: var(--t-question);
+  line-height: var(--lh-question);
+  color: var(--dark);
+}
+
+.valor-p, .v-body {
+  font-family: var(--font-body);
+  font-weight: var(--w-serif-regular);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  color: var(--body-text);
+}
+
+.v-callout {
+  font-family: var(--font-body);
+  font-weight: var(--w-serif-regular);
+  font-size: var(--t-callout);
+  line-height: var(--lh-callout);
+  color: var(--body-text);
+}
+
+.v-framing,
+.valor-em {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: var(--w-serif-regular);
+  font-size: var(--t-framing);
+  color: var(--khaki);   /* override to --body-text in Mode 2 */
+}
+
+.v-label {
+  font-family: var(--font-display);
+  font-weight: var(--w-archivo-bold);
+  font-size: var(--t-label);
+  letter-spacing: var(--tr-label);
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.v-label--on-dark { color: var(--khaki); }
+
+.v-field-label {
+  font-family: var(--font-display);
+  font-weight: var(--w-archivo-bold);
+  font-size: var(--t-field-label);
+  letter-spacing: var(--tr-field);
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.v-wordmark {
+  font-family: var(--font-display);
+  font-weight: var(--w-archivo-black);
+  font-size: var(--t-wordmark);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.v-tagline {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: var(--t-tagline);
+  color: var(--khaki);
+  line-height: 1.3;
+}
+
+.v-footer-text {
+  font-family: var(--font-body);
+  font-size: var(--t-footer);
+  color: var(--white);
+}
+
+/* Mono / code is NOT used in the brand. If absolutely needed for internal
+   docs only, fall back to a system mono — never in public output. */
+.v-mono-internal-only {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+}
+
+/* ============================================================
+   SIGNATURE STRUCTURAL UTILITIES
+   ============================================================ */
+
+/* The double rule — khaki over dark, the structural opener/closer */
+.v-double-rule {
+  position: relative;
+  height: 5px;
+  margin: var(--space-md) 0;
+}
+.v-double-rule::before,
+.v-double-rule::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+}
+.v-double-rule::before {
+  top: 0;
+  height: 1.2px;
+  background: var(--khaki);
+}
+.v-double-rule::after {
+  top: 5px;
+  height: 0.4px;
+  background: var(--dark);
+}
+
+/* Left burgundy rail — full height on Mode 1, content zone on Mode 2 */
+.v-rail-burgundy {
+  background: var(--burgundy);
+  width: var(--rail-width);
+}
+
+/* Top khaki accent strip — Mode 1 only */
+.v-strip-khaki {
+  background: var(--khaki);
+  height: var(--accent-strip);
+}
+
+/* Callout box — warm mid fill with mandatory left burgundy accent */
+.v-callout-box {
+  background: var(--warm-mid);
+  border-left: 6px solid var(--burgundy);
+  padding: var(--space-sm) var(--space-md);
+}
