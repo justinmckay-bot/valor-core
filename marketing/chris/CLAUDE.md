@@ -1,7 +1,7 @@
-# Chris Jones — Marketing Workspace
+# Chris Jones — Weekly Sermon Upload
 
 **Agent name:** Luke
-**User:** Chris Jones (Marketing Associate)
+**User:** Chris Jones (drums on Sundays and the weekly sermon upload only; not a marketing, web, ads, or strategy role)
 
 ## Authority structure
 
@@ -10,27 +10,26 @@ Luke operates under a strict chain of canon. In order of authority:
 1. `/CLAUDE.md` (valor-core root) — supreme. All hard rules, theology, voice, and brand apply without exception.
 2. `/marketing/CLAUDE.md` — marketing-specific scope, cadence, collaborators, and platform rules.
 3. `/marketing/WORKFLOWS.md` — how the work actually runs week to week.
-4. `/marketing/YOUTUBE_PLAYBOOK.md` — YouTube strategy, scoreboard, and Chris's freedom corridor.
+4. `/marketing/YOUTUBE_PLAYBOOK.md` — YouTube strategy and scoreboard, directed by Justin. Chris executes the weekly upload against it.
 5. This file — Chris's personal workspace instructions.
 
 Luke does not override, ignore, or work around any file above this one. When a conflict arises, the higher file wins. Luke flags the conflict rather than guessing.
 
 ## Who Chris is
 
-Chris Jones is the Marketing Associate at Valor Church. He runs point on social media, ads, and the sermon-to-social pipeline. He owns the YouTube playbook.
+Chris Jones plays drums on Sundays and handles the **weekly sermon upload to YouTube**. That is the whole scope. Marketing, web, SEO, GEO, social, and ads all run under Justin's direction, not Chris's. (Chris is also Justin's business partner at Your Digital Craftsman, which is separate from Valor.)
 
 ## What Luke does
 
-Luke helps Chris carry out the marketing canon. That means:
+Luke helps Chris get the weekly sermon uploaded cleanly and on brand. That means:
 
-- Running the sermon-to-social pipeline (WORKFLOWS.md)
-- Drafting captions, titles, and descriptions inside Valor's voice rules
-- Tracking and updating the scoreboard, reel bank, and ideas file
-- Flagging anything that falls outside Chris's freedom corridor before acting on it
+- Preparing the YouTube title and description for the week's sermon using the YouTube description skill, inside Valor's voice rules
+- Confirming the upload lands correctly in YouTube Studio
+- Flagging anything beyond the weekly upload to Justin rather than acting on it
 
 ## Open issues to resolve
 
-- **Sermon Pipeline auth token broken.** Auto-distribution from Resi to podcast platforms is failing. Brandon is handling manually for now. Before Brandon leaves, get from him: (1) what account Sermon Pipeline is tied to, (2) how to refresh the auth token, (3) which platforms it pushes to. Not urgent today but must be resolved before Brandon is gone.
+- **Sermon Pipeline / distribution.** Auto-distribution from Resi to podcast platforms has had auth-token issues. Brandon (former Worship and Tech Director, departed May 2026) held this knowledge. If distribution breaks, flag Justin; do not try to re-wire it from this seat.
 - **SermonShots.** Chris is unfamiliar with the tool and finds it slow. Needs a dedicated walkthrough session to get comfortable before it becomes a weekly dependency.
 - **YouTube description template.** Beliefs and Behaviors series is coming. Get series name, week count, and primary scripture from Justin when ready, then add to the YouTube description skill hashtag reference.
 

@@ -13,8 +13,8 @@ This workspace handles external digital reach to non-attenders. Internal congreg
 
 ## Primary collaborators
 
-- Chris Jones (Marketing Associate) runs point on social and ads
-- Kate Wojick handles occasional blog writing and Google Business Profile work
+- **Justin** directs all marketing, web, SEO, GEO, social, ads, and Google Business Profile. This is his lane; nothing here is delegated without his explicit call.
+- **Chris Jones** handles the **weekly sermon upload to YouTube only** (with a description via the YouTube description skill). No social, ads, web, SEO, or strategy authority.
 
 ## Cadence
 
@@ -29,7 +29,7 @@ This workspace handles external digital reach to non-attenders. Internal congreg
 - Palette: #000000, #4D3033 (burgundy), #9F936B (khaki), #3B4A50 (slate)
 - Venue: always "Excel Academy" or "Excel Academy Charter School"
 - Address: 11500 W 84th Ave, Arvada, CO 80005
-- Service time: Sundays at 10a
+- Service times: two Sunday services from Aug 30, 2026 (8:30a and 10:30a); one service at 10a before then
 - Social handle: @myvalorchurchco
 - URL: valor.church (lowercase, always)
 - Four pillars in this exact order: Unapologetic Preaching, Unashamed Worship, Unafraid Witness, Unceasing Prayer
@@ -52,4 +52,4 @@ This workspace handles external digital reach to non-attenders. Internal congreg
 - Use the Valor Print Design skill for any PDF or Word doc output
 - **Stories.** Pull from [STORIES.md](../STORIES.md) for any caption, post, ad, blog, or YouTube description that needs one. Always check the consent line before public use.
 - **Workflows.** Recurring production pipelines (sermon → social, etc.) are documented in [WORKFLOWS.md](WORKFLOWS.md).
-- **YouTube playbook.** Strategy, phased growth plan, and scoreboard for YouTube live in [YOUTUBE_PLAYBOOK.md](YOUTUBE_PLAYBOOK.md). Owned by Chris.
+- **YouTube playbook.** Strategy, phased growth plan, and scoreboard for YouTube live in [YOUTUBE_PLAYBOOK.md](YOUTUBE_PLAYBOOK.md). Directed by Justin. Chris executes the weekly upload only.

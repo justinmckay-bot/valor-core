@@ -62,7 +62,7 @@ The threads weave together too cleanly to be accidental.
 
 In September 2022, Mia Coffing, principal of what is now Excel Academy Charter School, gave The Local Church its first space. She didn't have to. She did anyway.
 
-Years later, Valor still meets in that building every Sunday at 10a. Mia's oldest son Caleb serves on the worship team. The building came from her welcome, and her family is still in the room.
+Years later, Valor still meets in that building every Sunday. Mia's oldest son Caleb serves on the worship team. The building came from her welcome, and her family is still in the room.
 
 ---
 
@@ -110,7 +110,7 @@ The name, the pillars, the DNA. They did not come from a brainstorming session. 
 - **Tags:** sending, multiplication, worship, planting, Acts 13
 - **Consent:** Public-with-care. Russ's send-out is public. Treat his family transition with pastoral respect.
 
-Russ Daly came to Valor as worship leader and church planting resident. He stayed long enough to lead worship through the rebrand from The Local Church to Valor. He is leaving to plant Golden City Church in Broomfield. His final Sunday leading worship is mid-July 2026. The official send-out moment is late July.
+Russ Daly came to Valor as worship leader and church planting resident. He stayed long enough to lead worship through the rebrand from The Local Church to Valor. He left to plant Golden City Church in Broomfield. His final Sunday leading worship was mid-July 2026; the official send-out came in late July.
 
 Sending hurts. Sending is the point.
 

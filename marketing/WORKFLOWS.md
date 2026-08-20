@@ -6,7 +6,7 @@ Recurring production pipelines for the marketing workspace. Brand and voice rule
 
 ## Sermon → Social Pipeline
 
-**Owner:** Chris Jones (Marketing Associate)
+**Owner:** Justin (directs all marketing). Chris Jones executes the weekly sermon upload only.
 **Cadence:** Weekly, kicks off Sunday after service
 **Source feed:** Resi (Sunday service capture)
 **Tooling:** Resi, YouTube, podcast hosts, Sermon Clips (AI Reels generator, similar to Opus), Instagram, TikTok

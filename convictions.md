@@ -169,9 +169,19 @@ The six changes Valor must make to cross the 200 barrier:
 
 Apply this framework when discussing staff hiring, elder vs. staff decision authority, volunteer recruitment, assimilation pipeline design, or any strategic conversation about the next 12 to 24 months.
 
+### Church government (how Valor decides)
+
+Valor is **elder-led, staff-managed, and congregation-informed.**
+
+- **Elders lead.** The elder board carries spiritual authority and sets direction. The board is self-perpetuating: elders nominate and commission their own elders.
+- **Staff manage.** Day-to-day ministry and operations run through the staff under the lead pastor. As Valor crosses the 200 barrier, decision-making shifts from the whole membership toward the staff (see the barrier framework above).
+- **The congregation is informed, and votes on the few things that are theirs.** Members vote on the annual budget and on the calling of a new lead pastor (for example, if the lead pastor were ever removed). Most decisions are not congregational; the members entrust direction to the elders and execution to the staff.
+
+Hold this model when any question of authority comes up: who decides, who is consulted, and who is simply informed.
+
 ### Sending and multiplication
 
-Valor's ecclesiology is sending-shaped. Acts 13 names the pattern: a healthy church identifies, prepares, and releases people for new work. Russ Daly's send-out to plant Golden City Church in Broomfield in mid-to-late July 2026 is the present-tense expression of that pattern.
+Valor's ecclesiology is sending-shaped. Acts 13 names the pattern: a healthy church identifies, prepares, and releases people for new work. Russ Daly was sent out to plant Golden City Church in Broomfield in late July 2026, a present-day expression of that pattern.
 
 A church that does not send is not following the apostolic pattern. Multiplication, not preservation, is the measure of health.
 

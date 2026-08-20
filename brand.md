@@ -21,7 +21,7 @@ This file is internal working documentation. Em dashes are fine here. They are n
 - Always **Excel Academy** or **Excel Academy Charter School**
 - Never "Excel Charter Academy"
 - Address: **11500 W 84th Ave, Arvada, CO 80005**
-- Service time: **Sundays at 10a** (lowercase `a`, no space, no period)
+- Service times: **two Sunday services begin August 30, 2026, at 8:30a and 10:30a** (one service at 10a before that date). Lowercase `a`, no space, no period.
 
 ## Digital
 
@@ -42,7 +42,7 @@ Use these exact words. Do not paraphrase.
 | URL | valor.church |
 | Social | @myvalorchurchco |
 | Address | 11500 W 84th Ave, Arvada, CO 80005 |
-| Service time | Sundays at 10a |
+| Service times | Two services from Aug 30, 2026: 8:30a and 10:30a (10a before then) |
 
 ---
 
@@ -129,7 +129,7 @@ Posture: **bold but human**. Not corporate, not casual-cool, not winking at the 
 - **Person.** "We" = the church as a family (we exalt, we build, we serve), never "we" = the staff. "You" addresses the reader. "I" only in pastoral letters, signed simply *Justin*.
 - **No em dashes in public-facing copy** (emails, social, print, handouts, slides, signage). Use a period or colon. Fine in internal `.md` only.
 - **Slogans/taglines/mottos end with a period.** "Stop Drifting. Build Resilient Faith."
-- **Numerals for time.** `Sundays at 10a`. En dash for ranges only: `10:00–11:00a`.
+- **Numerals for time.** `8:30a`, `10:30a`. En dash for ranges only: `10:00–11:00a`.
 - **No emoji. Ever.** Print, social, web, slides, email. Emoji break the serious register.
 - **No corporate jargon** ("outcomes," "scalable," "high-impact"). No casual-cool ("check us out").
 
@@ -208,4 +208,4 @@ Render as three stacked lines, or one line with periods between phrases. Never w
 
 ## When in doubt
 
-Pick a mode. Black, burgundy, khaki, slate. Archivo Black, PT Serif. White on burgundy, always. Excel Academy, Sundays at 10a, valor.church. The four pillars in order. Left-aligned, crisp rectangles, the ghost V-mark and the rail. That is the brand.
+Pick a mode. Black, burgundy, khaki, slate. Archivo Black, PT Serif. White on burgundy, always. Excel Academy, two Sunday services (8:30a and 10:30a from Aug 30, 2026), valor.church. The four pillars in order. Left-aligned, crisp rectangles, the ghost V-mark and the rail. That is the brand.

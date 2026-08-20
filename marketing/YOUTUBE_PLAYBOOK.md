@@ -2,7 +2,7 @@
 
 Strategy and growth plan for Valor's YouTube presence. Production pipelines (sermon upload, Reel extraction, posting cadence) live in [WORKFLOWS.md](WORKFLOWS.md). This file is the "where we're going and how we know we're winning" layer.
 
-**Owner:** Chris Jones (Marketing Associate)
+**Owner:** Justin (directs YouTube strategy). Chris Jones executes the weekly sermon upload only.
 **Reviewed by:** Justin McKay
 **Last updated:** 2026-05-07
 
@@ -124,7 +124,7 @@ Tracked weekly. Posted somewhere Chris (and the team) sees it without asking. Ou
 
 ## The freedom corridor
 
-The point of this section is to make the boundaries visible so Chris doesn't have to guess where the fence is.
+The boundary is now simple: Chris's lane is the **weekly sermon upload** (title, description, correct publish). Anything beyond that (strategy, thumbnails as creative direction, series planning, cross-posting, ads) runs under Justin. When in doubt, upload the sermon and flag the rest to Justin.
 
 **Chris owns, no permission needed:**
 - Clip selection, captions, titles, thumbnails

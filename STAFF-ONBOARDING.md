@@ -2,7 +2,11 @@
 
 Welcome to the Valor staff workspace. This doc walks you through the one-time setup. Plan on 45 minutes for the technical setup, plus a 60-minute in-person training session with Justin.
 
-If you get stuck, message Justin or Glenn. Don't hack around it. We want everyone on the same setup.
+If you get stuck, message Justin or Glenn. Don't hack around it. We want everyone on the same setup. If the technology fights you or something breaks in a way you can't fix in a couple of minutes, that is exactly when to reach out. Getting help fast is the standard here, not a last resort.
+
+## Who has a workspace right now
+
+This first round is for **Glenn, Nathan, Lacy, and Abigail.** Dylan and Elizabeth will be brought on later. If you are not on that list yet, hold tight; Justin will bring you in when it is your turn.
 
 ---
 
@@ -114,6 +118,16 @@ If you already have a GitHub account, skip ahead.
 
 You'll get an email invite from GitHub when Justin adds you. Click the link, accept, and you're in.
 
+### 6. Notion (the people layer)
+
+The core files teach you the *system*. The actual people, groups, and pipeline live in **Notion**, in the shared Valor **People + Groups** space. That is where you find the current body, who is in which group and Bible study, each group's leader, and where every person sits in the assimilation pipeline (Guest, Connected, Discover Valor, Next Steps, All In, Member) and across the Four Chambers.
+
+1. Make sure you have a Notion account and are signed in.
+2. Ask Justin for access to the shared Valor People + Groups space if you don't already have it (the team space is being finalized; he'll add you).
+3. In your Claude workspace, connect the Notion connector so your agent can read that space. Then it can answer "who haven't we followed up with?" or "who leads the West Arvada group?" straight from the live data.
+
+**Never** copy congregant names, phones, emails, or giving details out of Notion into a committed file. Read from Notion; keep the record in Notion.
+
 ---
 
 ## Phase 3: Setup
@@ -147,7 +161,7 @@ The first time, GitHub may ask you to sign in. Use your GitHub username and a **
 
 ### Create your own private workspace
 
-Decide your workspace name. Use `valor-{firstname}` (lowercase). Examples: `valor-glenn`, `valor-nathan`, `valor-chris`.
+Decide your workspace name. Use `valor-{firstname}` (lowercase). Examples: `valor-glenn`, `valor-nathan`, `valor-lacy`, `valor-abigail`.
 
 ```bash
 cd ~/Applications
@@ -196,11 +210,16 @@ Open `staff-workspace-starter.md`. It contains four templates concatenated toget
 | **references.md** | Your *personal* references. Vendor contacts, books you read, tools you use. Layered on top of `valor-core/references.md`. |
 | **tasks.md** | Your live to-do. Time-sensitive items only. Prune weekly. |
 
+### Build your own voice profile
+
+`valor-core/voice.md` is the Valor house floor: the shared rules that keep the whole team sounding like one church. It is not meant to make you sound like Justin. In your own workspace, build a short **voice profile** so your agent writes like *you*, inside Valor's rules. Capture how you actually talk: your go-to phrases, your rhythm, what you'd never say, a few real examples of your own writing. Put it in your CLAUDE.md or a `voice-me.md`. The house floor is the same for everyone; your profile is your fingerprint. Justin can point you to the voice-profile builder if you want help.
+
 ### What stays out of this workspace
 
 - **Congregant PII** (full names, emails, phones, addresses) in committed files. Use Planning Center for that. If you must reference a person, use first name only or initials, and keep the full record in PCO.
 - **Financial figures and partner giving amounts.** Those live in Justin's private workspace. If you need a number, ask him directly.
 - **Secrets** (API keys, passwords, .env files). Add a `.gitignore` to your repo and never commit them.
+- **Counseling and pastoral confidences. Never, anywhere, in any AI tool.** Do not paste, type, summarize, or store counseling sessions, care conversations, confessions, or disciplinary matters into Claude, a workspace file, or any AI chat. These stay off the system entirely. If you want to think through a care situation in general terms, do it with no names and no identifying detail.
 
 ---
 
@@ -230,6 +249,17 @@ Schedule 60 minutes with Justin. Format:
 After this session, you're live.
 
 ---
+
+## The Valor week
+
+The shared staff rhythm your agent should assume:
+
+- **Monday, 8:30-10:00 AM: Executive Team meeting.** Some in person, some on Zoom. This walks the eight checkpoints in `scoreboard.md`. Come with your numbers and your section ready.
+- **Tuesday through Friday:** office or work-from-home, on your own ministry work.
+- **Wednesday nights:** youth night.
+- **Sunday:** Sunday. Services, guests, load-in and teardown (mobile church).
+
+Justin's own rhythm to respect when you need him: Wednesday is his day off, and Thursday/Friday are sermon-writing days. Don't stack heavy asks against those unless it's urgent.
 
 ## Daily rhythm
 

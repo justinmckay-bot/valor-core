@@ -219,9 +219,9 @@ For the current preaching calendar and exact upcoming texts, ask Justin or the s
 | Platform | Purpose | Owner |
 |---|---|---|
 | Planning Center Online (PCO) | Church database, connect cards, people management | Glenn Jacobsen |
-| Mailchimp | Congregation newsletter and email | Kate Wojick |
-| HelloChurch / GoHighLevel | Meta ads follow-up workflow | Jacob (day-to-day), Chris Jones (oversight) |
-| Google Business Profile | Local SEO, reviews, posts | Kate Wojick |
+| Mailchimp | Congregation newsletter and email | Justin (comms) |
+| HelloChurch / GoHighLevel | Meta ads follow-up workflow | Justin's direction (being phased out) |
+| Google Business Profile | Local SEO, reviews, posts | Justin |
 | Meta Ads (Facebook / Instagram) | Paid digital acquisition. Zip codes 80027, 80021, 80030, 80031. Broomfield excluded. | Jacob |
 | Slack | Internal team communication | All staff |
 | Notion | Capture inbox, thinking, project structure | Justin |
@@ -229,7 +229,7 @@ For the current preaching calendar and exact upcoming texts, ask Justin or the s
 | Ramp | Expense management and company card | Glenn Jacobsen |
 | SermonHomebase | Sermon prep and archive | Justin |
 | Make.com | Automation layer | Glenn Jacobsen |
-| Replit | Development platform for custom Valor tools | Justin / Chris Jones |
+| Replit | Development platform for custom Valor tools | Justin |
 | RightNow Media | Small group and discipleship video library | All staff |
 | Dwell | Scripture memorization and audio Bible | All staff |
 

@@ -27,7 +27,7 @@
 
 - **Direct collaborator(s):** {who you partner with daily / weekly}
 - **Reports to:** Justin McKay
-- **Owns relationships with:** {external relationships your lane handles. E.g., Glenn owns Ramp and Mailchimp. Nathan owns Next Steps families. Chris owns Meta ad agency.}
+- **Owns relationships with:** {external relationships your lane handles. E.g., Glenn owns finances, facilities, and vendors. Nathan owns Next Steps families and youth. Abigail owns first-time guest connections.}
 
 ---
 
