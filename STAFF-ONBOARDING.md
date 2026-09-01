@@ -6,7 +6,7 @@ If you get stuck, message Justin or Glenn. Don't hack around it. We want everyon
 
 ## Who has a workspace right now
 
-This first round is for **Glenn, Nathan, Lacy, and Abigail.** Dylan and Elizabeth will be brought on later. If you are not on that list yet, hold tight; Justin will bring you in when it is your turn.
+This first round is for **Glenn, Nathan, Lacy, Abigail, and Dylan.** Elizabeth will be brought on later. If you are not on that list yet, hold tight; Justin will bring you in when it is your turn.
 
 ---
 
