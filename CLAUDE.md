@@ -8,6 +8,8 @@ You are reading the shared operating manual for Valor Church staff. This repo is
 
 ## Files in this repo and when to read them
 
+- **GLOSSARY.md**: Plain-English definitions of every technical term in this workspace. Read it to a staff member in their own words any time they hit a word they don't know, and never assume a term like repo, commit, or push is understood.
+
 - **mission.md**: Pull when stating Valor's purpose, the four pillars, motto, or tagline. Required reading before any external-facing copy.
 - **brand.md**: Pull for fonts, palette, venue name, address, service times, social handle, URL. Required reading before any visual or printed asset.
 - **voice.md**: Pull before writing any copy. Voice and tone, hard rules, words to avoid. This is the house floor; your own voice profile sits on top of it (see "Your voice" below).

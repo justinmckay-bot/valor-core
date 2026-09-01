@@ -1,5 +1,7 @@
 # CLAUDE.md (Valor Church staff workspace template)
 
+> **New to any of these words?** Read `valor-core/GLOSSARY.md` first. Every technical term in this workspace is defined there in plain English.
+>
 > **This is a starter template.** Replace every `{PLACEHOLDER}` with your own content. Delete this top quote block when you're done. Send the finished file to Justin in `#justin-claude` for approval before going live.
 
 ---

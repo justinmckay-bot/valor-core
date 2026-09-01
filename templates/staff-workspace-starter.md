@@ -2,6 +2,8 @@
 
 > **Instructions.** This file contains four starter templates concatenated together. After copying this file into your workspace, do the following:
 >
+> **New to any of these words?** Read `valor-core/GLOSSARY.md` first. Every technical term is defined there in plain English.
+>
 > 1. Create four new files in your workspace: `department.md`, `workflows.md`, `references.md`, `tasks.md`.
 > 2. Copy each section below (between the `=== filename ===` dividers) into the matching file.
 > 3. Customize the placeholders.

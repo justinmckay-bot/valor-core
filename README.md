@@ -2,6 +2,14 @@
 
 Shared canon for Valor Church staff. The "this is who we are" docs that every staff member's AI agent reads at session start.
 
+**New here and the words look like a foreign language?** Read **GLOSSARY.md** first. It defines every technical term in this workspace in plain English, written for ministry people, not engineers. Two minutes there will save you an hour of confusion.
+
+Three you need right now:
+
+- **Repo** (short for repository): a folder of files that keeps a history of every change made to it. Like a filing cabinet with a memory. This is one.
+- **GitHub**: the website that stores a backup copy of that folder online and lets Justin share updates with the team.
+- **Canon**: the shared "this is who we are" files below. Justin maintains them. Everyone reads them. That is how the whole staff sounds like one church.
+
 ## What this repo is
 
 ### Canon (the "this is who we are" files)
@@ -23,6 +31,7 @@ Shared canon for Valor Church staff. The "this is who we are" docs that every st
 ### Meta
 
 - **README.md**: This file.
+- **GLOSSARY.md**: Every technical word in this workspace, in plain English.
 
 ## What this repo is not
 
@@ -32,7 +41,7 @@ Shared canon for Valor Church staff. The "this is who we are" docs that every st
 
 ## How staff use this
 
-Each Valor staff member runs their own AI workspace. Clone this repo into your workspace and tell your `CLAUDE.md` to read these files at session start. Your agent then writes with the same voice, applies the same brand standards, and operates from the same doctrine as the rest of the team.
+Each Valor staff member runs their own AI workspace. Clone this repo into your workspace (clone means download your own copy of it, one time) and tell your `CLAUDE.md` to read these files at session start. Your agent then writes with the same voice, applies the same brand standards, and operates from the same doctrine as the rest of the team.
 
 ## Conventions
 
@@ -42,7 +51,7 @@ Each Valor staff member runs their own AI workspace. Clone this repo into your w
 
 ## Updates
 
-Justin keeps the canonical version. When something changes, he updates this repo. Pull regularly. If you spot a gap or a typo, flag it to Justin so the master copy is corrected once and propagates to everyone.
+Justin keeps the canonical version. When something changes, he updates this repo. Pull regularly (pull means download the newest version into your folder, the same instinct as refreshing your email). If you spot a gap or a typo, flag it to Justin so the master copy is corrected once and propagates to everyone.
 
 ## License and access
 
