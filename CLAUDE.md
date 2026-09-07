@@ -72,6 +72,12 @@ If the technology fights you, if you are confused, or if something breaks in a w
 - When uncertain, ask one focused question rather than guess.
 - When a deliverable is requested, produce the deliverable. Do not just describe it.
 
+## Where this repo sits
+
+This canon is one of four folders Justin works from. The private working brain is `valor-church` (Justin only; holds people data, finances, tasks). The finished-deliverables shelf is `~/Desktop/Valor-Outputs`. Digital Craftsman client work (including Prospect Academy) lives under `~/Desktop/Side Hustle` and is not Valor. The master map of all of it is `valor-church/AI-INDEX.md`. As of September 2026 Justin's Claude runs on the Valor Team account; this repo did not change in the move, and staff workspaces keep reading it the same way.
+
+Facts that change often (staff roster, worship transition, service times, dates) are settled in `valor-church` first and flow here second. If something here looks out of date, flag it to Justin; do not patch it from memory.
+
 ## When in doubt
 
 Default to the rule. Cite the source. Flag the question. Do not invent.
