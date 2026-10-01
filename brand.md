@@ -1,211 +1,187 @@
-# brand.md (Valor Church)
+# BRAND.md (Valor Church)
 
-The non-negotiables, plus the full Valor design system. Apply these to every visual, printed, social, slide, web, and digital asset.
+**Version 2026-10-01. Open-space system. This is the only current brand document.**
 
-This file is internal working documentation. Em dashes are fine here. They are not fine in public-facing Valor copy.
+It replaces the "two visual modes" brand.md (Dark Authority / Warm Clarity, dated 2026-08-19) that still sits in the Valor Core exports. That system is retired: no dark header bars, no dark footer bars, no burgundy rails down the page edge, no khaki strips, no ghost V watermark, no boxes drawn around copy. The print skill moved to this direction on 2026-05-25. This file makes it the rule for everything, not just PDFs.
 
-> Source: consolidated from the original `brand.md` and the **Valor Church Design System** (Remix), which mirrors `justinmckay-bot/valor-print-design-skill`. The design system's living files (CSS tokens, fonts, six logo lockups, slide and website kits, reference PDFs) are the production assets behind these rules.
+**Scope: everything Valor produces.** PDFs, Word docs, HTML documents, meeting agendas, courses, handouts, one-pagers, slides, expectations sheets, staff and partner documents, internal working docs, the newsletter. If it has Valor's name on it, it follows this file. (The live valor.church pages run on their own locked Divi system and are not changed by this file. Web is Justin's lane.)
 
----
+**The reference files.** These three are the standard. When in doubt, open one and match it.
 
-## Naming
+- `meetings/2026-09-14_glenn-conversation-agenda.html`
+- `Seat-to-Circle-Course.html` and `Street-to-Seat-Course.html` (Downloads, Sept 2026)
 
-- Full name: **Valor Church**
-- Short form: **Valor** (acceptable in casual or repeated reference)
-- Former name: **The Local Church (TLC)**, used through February 2026
-- Identity: an SBC and Send Network church plant in NW Arvada, Colorado
-- Never write: Ballard, Ballard Church, or any voice-to-text corruption
-
-## Venue
-
-- Always **Excel Academy** or **Excel Academy Charter School**
-- Never "Excel Charter Academy"
-- Address: **11500 W 84th Ave, Arvada, CO 80005**
-- Service times: **two Sunday services begin August 30, 2026, at 8:30a and 10:30a** (one service at 10a before that date). Lowercase `a`, no space, no period.
-
-## Digital
-
-- URL: **valor.church** (always lowercase, never `Valor.church`, never `https://valor.church` in display copy)
-- Social handle: **@myvalorchurchco** (verbatim, lowercase)
-- Partner site: **partnerwithvalor.church**
-
-## Verbatim recurring copy
-
-Use these exact words. Do not paraphrase.
-
-| What | Exact wording |
-|---|---|
-| Mission | Exalt God by boldly making disciples of valor, uniting as a faith family, and serving our city. |
-| Tagline | Stop Drifting. Build Resilient Faith. |
-| Motto | All for Him. All Excellent. All In. |
-| Four pillars (always this order) | Unapologetic Preaching. Unashamed Worship. Unafraid Witness. Unceasing Prayer. |
-| URL | valor.church |
-| Social | @myvalorchurchco |
-| Address | 11500 W 84th Ave, Arvada, CO 80005 |
-| Service times | Two services from Aug 30, 2026: 8:30a and 10:30a (10a before then) |
+One correction to the reference files: all three end in a black filled footer, and the agenda has a burgundy full-width "letter" band. Those two moves are struck. Footer is text on white. Big statements get space and type, not a colored band.
 
 ---
 
-## The two visual modes
+## The rule in one line
 
-Every Valor artifact belongs to one of two modes. Choose before you design. They are intentionally in tension. Don't smooth it out.
-
-**MODE 1 — DARK AUTHORITY.** Full-bleed black (`#0d0d0d`) with a ghost V-mark cropping off the right edge, Archivo Black headlines in white, PT Serif Italic sub-lines in khaki, a top khaki accent strip, and a left burgundy rail. Register: *"We know who we are."* Use for campaign covers, directional signage, lanyards, event cards, outreach pieces, sermon-series openers.
-
-**MODE 2 — WARM CLARITY.** Off-white (`#f7f4f0`) page with a dark header bar over a khaki rule, a left burgundy rail in the content zone, Archivo Bold labels, PT Serif Bold questions, PT Serif Regular body, warm-mid callout boxes with a left burgundy accent. Register: *"Come in. There's room here."* Use for small group guides, pastoral letters, sermon notes, discipleship resources, forms.
+White page. Black type. Open space. No fills behind text. No boxes around text. The brand lives in the type, the wordmark, and the restraint.
 
 ---
 
-## Color
+## What is struck (do not produce these)
 
-### Official brand sheet (the four)
+- Filled header bars of any color. The header is white with a hairline under it, or just the wordmark in type.
+- Filled footer bars of any color. The footer is a line or two of small text on white.
+- Full-width colored bands or sections (black, burgundy, khaki, slate). No "letter" blocks, no dark hero blocks.
+- Boxes drawn around copy. No four-sided borders around panels, callouts, or flags. Use space, a single top rule, or a single left rail instead.
+- Page-edge trim: left rails that run the page height, top strips, decorative frames.
+- Watermarks. No faded V-mark behind content.
+- Filled badges, pills, zebra-striped tables, colored table headers.
+- Gradients, shadows, glass, rounded cards, emoji, stock icons.
+- Dark or near-black text on burgundy. If burgundy is ever a fill, the text on it is white. The system avoids the situation by not filling with burgundy at all.
 
-| Color | Hex |
-|---|---|
-| Black | #000000 |
-| Burgundy | #4D3033 |
-| Khaki | #9F936B |
-| Slate | #3B4A50 |
+---
 
-### Working / extended tokens (screen + Mode 2 surfaces)
+## Canvas
 
-| Token | Hex | Use |
-|---|---|---|
-| `--black` | #0d0d0d | Mode 1 background (softer than pure black) |
-| `--dark` | #1a1a1a | headers, primary text, footer bars |
-| `--burgundy` | #4D3033 | rails, badges, callouts (primary accent) |
-| `--khaki` | #b5a97a | working khaki, lighter for screens |
-| `--khaki-dim` | #8a7a55 | URLs, subdued accents |
-| `--white` | #ffffff | text on dark / on burgundy |
-| `--off-white` | #f7f4f0 | Mode 2 page background |
-| `--warm-mid` | #ede8e0 | callout box background only |
-| `--rule-warm` | #cdc5bb | write lines, warm dividers |
-| `--body-text` | #2e2e2e | all paragraph body copy |
-| `--ghost` | #232323 | ghost V-mark stroke (Mode 1) |
-
-### The maroon rule (global, non-negotiable)
-
-Whenever burgundy `#4D3033` is the background — a rail, strip, badge, callout border, header band, sidebar, anything — the text on top of it must be **WHITE**. Never dark. Never near-black. Khaki on burgundy is allowed only for ≤8pt secondary labels, never primary copy. Before rendering any text, ask: what color is the fill directly behind these characters?
-
-### Distribution
-
-Color is never distributed evenly. Two-thirds of every surface is black (Mode 1) or off-white (Mode 2). Khaki is an accent, never a primary fill. Burgundy is reserved for rails, badges, and small accents, never a large background. No gradients, anywhere, ever. Slate is used sparingly.
+- Paper: `#faf9f7` (screen) or `#ffffff` (print). Never patterned, never a photo behind type.
+- Reading column: 720px max for body, 900px for tables and footers. Print: US Letter, 0.65" margins.
+- Space does the structural work. Sections sit 88px apart on screen (72px inside a module, 56px on phones). Print: generous leading, never crowded.
+- Left-aligned, always. Centered type only on signage and vertical lockups.
 
 ---
 
 ## Type
 
-Two families, ever. **Archivo** for display and labels (Black for headlines, Bold for labels, Regular only for sub-body). **PT Serif** for body and emphasis (Regular for paragraphs, Bold for questions, Italic for framing lines). Never Helvetica, Times, system-ui, Inter, Roboto, or any "sensible default." Type carries the brand more than color does. Both families ship locally (Archivo as a variable font plus statics, PT Serif as the four-style set); no Google Fonts dependency at runtime.
+Two families. Nothing else, ever. Archivo and PT Serif load from Google Fonts on screen and ship as local TTFs for print.
 
-### Scale (preserve all four distinct levels, never flatten)
+| Role | Font | Size (screen) | Notes |
+|---|---|---|---|
+| H1 | Archivo Black | 40 to 68px, line-height 1.03 | ALL CAPS, tracking -0.015em |
+| H2 | Archivo Black | 27 to 40px, line-height 1.08 | ALL CAPS |
+| Module number | Archivo Black | 38 to 58px | Burgundy. The big "01" beside an H2 |
+| H3 | Archivo 700 | 19px | ALL CAPS, tracking .02em |
+| H4 / eyebrow | Archivo 700 | 12 to 13px | ALL CAPS, tracking .13 to .16em, burgundy or khaki |
+| Kicker / meta | Archivo 600 or 700 | 11 to 12px | ALL CAPS, tracked, khaki or slate |
+| Lede | PT Serif | 22px, line-height 1.52 | Slate |
+| Body | PT Serif | 18px, line-height 1.62 | Black |
+| Pull statement | PT Serif | 20px, line-height 1.45 | Beside a 3px burgundy left rail |
+| Blockquote | PT Serif Italic | 24px, line-height 1.42 | Slate, 1px khaki left line |
+| Table | PT Serif | 16px | Header row Archivo 700 11px caps |
+| Small / footer | PT Serif or Archivo | 11 to 15px | Slate |
 
-| Role | Size | Font / weight |
+Print scale: body 11pt PT Serif minimum, questions 13pt PT Serif Bold, display 28 to 36pt Archivo Black, labels 7.5 to 8pt Archivo Bold tracked, wordmark 21 to 24pt Archivo **Bold** (one weight below Black, so the signature stays quiet).
+
+Casing: ALL CAPS lives in Archivo only. Never caps in PT Serif. Body is sentence case.
+
+---
+
+## Color
+
+The four official colors. No others.
+
+| Color | Hex | Where it goes |
 |---|---|---|
-| Display (Mode 1 headline) | 36px (28px small) | Archivo Black |
-| Series title (Mode 2) | 18px | Archivo Black |
-| Question | 17px | PT Serif Bold |
-| Body | 15px | PT Serif Regular |
-| Callout | 14px | PT Serif Regular |
-| Wordmark | 28px | Archivo Black |
-| Label | 10px tracked +0.14em | Archivo Bold |
-| Tagline / footer | 11px | PT Serif Italic / Regular |
+| Black | `#000000` | All body type, headlines, the wordmark, hairlines, table header rule |
+| Burgundy | `#4D3033` | Module numbers, H4 eyebrows, the 3px left rail on pull statements, list dash markers, links, one accent word in the wordmark |
+| Khaki | `#9F936B` | Kickers, meta lines, citations, blockquote left line, table-of-contents numbers |
+| Slate | `#3B4A50` | Ledes, blockquote text, secondary copy, footer text |
 
-Body copy never goes below 11pt in print or 15px on screen.
+Working tones (not brand colors, just utilities): hairline `rgba(0,0,0,.14)`, soft hairline `rgba(0,0,0,.08)`, paper `#faf9f7`.
 
-### Casing
-
-- **ALL CAPS — Archivo Bold/Black only.** Section labels, document-type labels, wordmarks, top-of-page directional labels. Tracked +1.5. Never ALL CAPS in PT Serif.
-- **Title Case** for series titles, document titles, event names.
-- **Sentence case** for body copy, questions, callouts, captions.
-- Never Title Case inside body copy or buttons.
+Color is for type and for thin lines. Never a fill behind text. Two-thirds of any page is paper and black type; burgundy and khaki are accents you notice second.
 
 ---
 
-## Voice and content
+## Structure
 
-Posture: **bold but human**. Not corporate, not casual-cool, not winking at the camera. A pastor who's done the reading, talks plainly, and means what he says.
+**Header.** On screen: a white sticky bar, 1px soft hairline under it, wordmark left ("VALOR." with a burgundy period, then the document name), small Archivo caps links right. In print: "VALOR" in Archivo Bold at the top left, tagline under it in PT Serif Italic burgundy, document type as a small burgundy eyebrow top right. No bar behind any of it.
 
-- **Tone.** Direct. Short sentences, verbs first. Theological without jargon ("disciples of valor," not "spiritual formation outcomes"). Warm authority. Hospitable, not chummy ("You're welcome here," never "Hey friend!").
-- **Person.** "We" = the church as a family (we exalt, we build, we serve), never "we" = the staff. "You" addresses the reader. "I" only in pastoral letters, signed simply *Justin*.
-- **No em dashes in public-facing copy** (emails, social, print, handouts, slides, signage). Use a period or colon. Fine in internal `.md` only.
-- **Slogans/taglines/mottos end with a period.** "Stop Drifting. Build Resilient Faith."
-- **Numerals for time.** `8:30a`, `10:30a`. En dash for ranges only: `10:00–11:00a`.
-- **No emoji. Ever.** Print, social, web, slides, email. Emoji break the serious register.
-- **No corporate jargon** ("outcomes," "scalable," "high-impact"). No casual-cool ("check us out").
+**Footer.** Text on white. A hairline above it if the page needs closure. Screen: motto, venue and address, service times, valor.church, pillars, in small PT Serif with khaki H4 labels. Print: one line, `valor.church  |  @myvalorchurchco`, 8pt. Never a filled bar.
 
----
+**Section breaks.** A 1px hairline and space. Not a background change.
 
-## Layout
+**Module opener.** Big burgundy number (Archivo Black) beside a two or three line ALL CAPS H2, with a khaki meta line under it. This is the most recognizable move in the system.
 
-- **Left-aligned, always.** Type aligns to the rail or content margin. Centered headlines only for vertical lockups and signage. Never center body copy.
-- **Generous margins.** US Letter at 0.65" margin, content width 7.2". Web at `min(120px, 8vw)` outer padding.
-- **Vertical rhythm in tokens.** Spacing xs/sm/md/lg/xl = 8 / 14 / 23 / 35 / 50px. Never half-values.
-- **Right-edge clip is the most common production error.** Always wrap to content width minus right margin.
-- **Fixed structures.** Top khaki strip (Mode 1) and left burgundy rail (both modes) are page-fixed, never floated, never optional. Rail width 6px; khaki strip 4px.
-- **Sections stack vertically**, separated by double rules or section labels, never by colored backgrounds. No "hero with three feature cards in a grid."
+**Pull statement ("win" block).** A 3px burgundy left rail, a tiny burgundy label above, 20px PT Serif text. One side only, never a box.
 
-### Backgrounds
+**Emphasis block ("valor" block).** A 2px black top rule, a 1px hairline bottom rule, content between. Open on both sides.
 
-Full-bleed black (Mode 1) with the ghost V-mark cropped off the right edge at 8–12% opacity. Solid off-white (Mode 2), never patterned, never gradient; warm-mid (`#ede8e0`) reserved for callout boxes only. No images as backgrounds; photography lives inside a card or frame. No gradients.
+**Flag / caution.** Burgundy H4 eyebrow, then the copy. No border around it. If it needs to be set apart, give it space or use the emphasis-block rules.
 
-### Borders, radii, shadows
+**Quote.** 1px khaki line on the left, PT Serif Italic in slate, citation in small tracked Archivo khaki.
 
-- Crisp rectangles. Badges max 2px radius; cards max 4px (often 0); images 0; inputs 2px.
-- Hairline borders are 0.6px warm-rule color, not gray, not black.
-- **Double rule** (the signature move): a 0.9pt khaki line over a 0.3pt dark line, 4px gap. Section opener (after series titles, Mode 2) and closer (above tagline footers). Never a single rule where a double rule belongs.
-- No drop shadows. Mode 1 has none. Mode 2 cards are flat warm-mid with a left burgundy accent; if lift is needed, a thin warm hairline under the card, never a soft shadow. No backdrop blur, no glassmorphism.
+**Lists.** No bullets. A 12px by 1px burgundy dash at the left of each item, 26px indent.
 
-### Imagery
+**Tables.** Header row in Archivo 700 11px caps with a 1px black rule under it. Body rows separated by soft hairlines. First column bold. No fills, no zebra stripes, no borders around the table.
 
-Warm, slightly desaturated, softly grainy. No cold blues, no high-saturation pastels, no teal/orange cinematic grades. B&W acceptable for pastoral portraits. Always framed by structural elements, never bled behind type. The mark and a photo are never overlaid.
+**Table of contents.** Rows separated by hairlines: khaki number, Archivo 700 title, khaki tracked duration right.
 
-### Animation (print-first; rare)
-
-Ease-out `cubic-bezier(0.2, 0.8, 0.2, 1)` or linear for rails. Never bouncy. 180–280ms hover/press, 400–600ms entrance. Fades and slight upward translates (8–16px). No carousels, parallax, or Lottie. Hover: khaki underline on links, 92% opacity on buttons, no scale. Press: burgundy darkens to `#3a2326`. Focus: 2px khaki outline at 2px offset, never browser blue.
+**Buttons (screen only).** Solid black, white Archivo caps, zero radius. Hover goes burgundy. Ghost version is a 1px black border on transparent. These are the only two.
 
 ---
 
-## Iconography
+## Imagery
 
-The wordmark and the V-mark do the work an icon system would do elsewhere.
+Documentary photos of real Valor people. Black and white or warm and slightly desaturated. Photos sit in their own space; never behind type, never with the mark overlaid. The V-mark appears small and at full opacity on covers and multi-page internals only, dark-ink asset on paper.
 
-- **The V-mark** (two stacked hollow chevrons) is the primary icon at any size: ghost background (~95% canvas height, cropped, 8–12% alpha, from `mark-light.png`); full-opacity logo on covers and slides; or part of a lockup (horizontal for inline, vertical for stacked/centered).
-- **Six logo lockups** live in `assets/logo/`: mark / horizontal / vertical, each in dark-ink and light-ink. 3000×3000 transparent PNGs.
-- **Numbered badges** are typographic: burgundy fill, white Archivo Bold numerals at 7.5pt, 2pt radius. Used to number questions, form steps, commitments.
-- **Functional icons** (web nav, form indicators only): **Lucide**, 1.75px stroke, outline only, sized in steps of 4 (16/20/24/32px). `--dark` on light, `--khaki` on dark, `--burgundy` for small accent rows. Never filled. Never mix icon libraries.
-- **No emoji, no decorative unicode glyphs** (• ◦ † ★). Bullets render as `•` only when no Archivo Bold label hierarchy is available.
+Asset naming: `*-dark.png` is dark ink for light backgrounds (the default now). `*-light.png` is light ink for dark backgrounds (rare).
 
 ---
 
-## Logo asset naming (read carefully)
+## Verbatim copy (do not paraphrase)
 
-The `-dark` / `-light` suffix names the **ink color of the asset**, not the background it sits on.
+| What | Exact wording |
+|---|---|
+| Name | Valor Church (short form: Valor) |
+| Tagline | Stop Drifting. Build Resilient Faith. |
+| Motto | All for Him. All Excellent. All In. |
+| Four pillars, this order | Unapologetic Preaching. Unashamed Worship. Unafraid Witness. Unceasing Prayer. |
+| Venue | Excel Academy, or Excel Academy Charter School |
+| Address | 11500 W 84th Ave, Arvada, CO 80005 |
+| Services | Sundays at 8:30 and 10:30 (two services since August 30, 2026) |
+| URL | valor.church (always lowercase) |
+| Social | @myvalorchurchco |
 
-- `*-dark.png` = dark ink, use on **LIGHT** backgrounds.
-- `*-light.png` = light ink, use on **DARK** backgrounds.
-
-Selection is inverted from the fill: dark fill → light asset; light fill → dark asset.
+Public copy: no em dashes, no emoji, no corporate openers, no "Southern Baptist" label. Full voice rules in `VOICE.md`.
 
 ---
 
-## The motto
+## CSS tokens (copy these into any HTML document)
 
-**All for Him. All Excellent. All In.**
+```css
+:root{--black:#000;--burgundy:#4D3033;--khaki:#9F936B;--slate:#3B4A50;--paper:#faf9f7;--hair:rgba(0,0,0,.14);--hair-soft:rgba(0,0,0,.08)}
+body{background:var(--paper);color:var(--black);font-family:'PT Serif',Georgia,serif;font-size:18px;line-height:1.62}
+.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--hair-soft)}
+.wrap{max-width:720px;margin:0 auto;padding:0 28px}
+section{padding:88px 0}
+.module{padding:72px 0;border-top:1px solid var(--hair)}
+h1{font-family:'Archivo Black',sans-serif;font-size:clamp(40px,7vw,68px);line-height:1.03;letter-spacing:-.015em;text-transform:uppercase}
+h2{font-family:'Archivo Black',sans-serif;font-size:clamp(27px,4vw,40px);line-height:1.08;text-transform:uppercase}
+h3{font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;letter-spacing:.02em;text-transform:uppercase}
+h4{font-family:'Archivo',sans-serif;font-weight:700;font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--burgundy)}
+.kicker{font-family:'Archivo',sans-serif;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--khaki)}
+.lede{font-size:22px;line-height:1.52;color:var(--slate)}
+.mod-num{font-family:'Archivo Black',sans-serif;font-size:clamp(38px,6vw,58px);line-height:.85;color:var(--burgundy)}
+.win{border-left:3px solid var(--burgundy);padding:4px 0 4px 22px}
+.valor{border-top:2px solid var(--black);border-bottom:1px solid var(--hair);padding:24px 0}
+blockquote{font-size:24px;line-height:1.42;font-style:italic;color:var(--slate);padding-left:24px;border-left:1px solid var(--khaki)}
+ul.plain{list-style:none;padding:0}
+ul.plain li{padding-left:26px;position:relative;margin-bottom:12px}
+ul.plain li:before{content:"";position:absolute;left:0;top:12px;width:12px;height:1px;background:var(--burgundy)}
+th{font-family:'Archivo',sans-serif;font-weight:700;font-size:11px;letter-spacing:.11em;text-transform:uppercase;text-align:left;border-bottom:1px solid var(--black)}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--hair-soft);vertical-align:top}
+footer{background:transparent;color:var(--slate);border-top:1px solid var(--hair);padding:48px 0}
+```
 
-Render as three stacked lines, or one line with periods between phrases. Never with em dashes between the phrases.
+Load fonts with: `https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap`
 
 ---
 
-## What we do not do
+## Ship check
 
-- No generic AI aesthetic. No stock-feeling gradient swirls. No over-rounded "modern church" sans-serif templates.
-- No em dashes in any public-facing copy. No emoji anywhere.
-- No fonts outside Archivo and PT Serif. No colors outside the palette. No gradients.
-- No dark or near-black text on a burgundy fill.
-- No watercolor, pastel washes, or gradient millennial pinks.
-- No backdrop blur, glassmorphism, drop shadows, or carousel/parallax motion.
-- No softening the four pillars into something less direct.
+Before anything goes out, every line must be true.
 
-## When in doubt
-
-Pick a mode. Black, burgundy, khaki, slate. Archivo Black, PT Serif. White on burgundy, always. Excel Academy, two Sunday services (8:30a and 10:30a from Aug 30, 2026), valor.church. The four pillars in order. Left-aligned, crisp rectangles, the ghost V-mark and the rail. That is the brand.
+- [ ] Background is paper or white everywhere. No colored or black band anywhere on the page.
+- [ ] Header has no fill. Footer has no fill.
+- [ ] No four-sided border around any block of copy.
+- [ ] No rail, strip, frame, or watermark.
+- [ ] Only Archivo and PT Serif. Only the four colors plus hairlines.
+- [ ] Burgundy and khaki appear only in type, thin lines, and the single left rail on pull statements.
+- [ ] Body type is black, 18px on screen or 11pt in print, never smaller.
+- [ ] Sections are separated by space and hairlines.
+- [ ] Verbatim copy matches the table above. Public copy has no em dashes.
+- [ ] It would look at home in a well-designed independent magazine. If it looks like a church template or a SaaS page, start over.
