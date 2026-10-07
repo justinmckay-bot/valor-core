@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Street to Seat | Valor Church Guest Experience Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000000;
+  --burgundy:#4D3033;
+  --khaki:#9F936B;
+  --slate:#3B4A50;
+  --paper:#faf9f7;
+  --hair:rgba(0,0,0,.14);
+  --hair-soft:rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{
+  background:var(--paper);
+  color:var(--black);
+  font-family:'PT Serif',Georgia,serif;
+  font-size:18px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---------- NAV : white, hairline, never a filled dark bar ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:#fff;
+  border-bottom:1px solid var(--hair-soft);
+}
+.nav-inner{
+  max-width:1080px;margin:0 auto;
+  padding:16px 28px;
+  display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;
+}
+.wordmark{
+  font-family:'Archivo Black',sans-serif;
+  font-size:15px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--black);text-decoration:none;white-space:nowrap;
+}
+.wordmark span{color:var(--burgundy)}
+.nav-links{
+  margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;
+}
+.nav-links a{
+  font-family:'Archivo',sans-serif;font-weight:600;
+  font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--slate);text-decoration:none;
+  padding:5px 9px;border:1px solid transparent;
+  transition:all .16s ease-out;
+}
+.nav-links a:hover{color:#fff;background:var(--black)}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:720px;margin:0 auto;padding:0 28px}
+.wide{max-width:900px;margin:0 auto;padding:0 28px}
+section{padding:88px 0}
+.rule{height:1px;background:var(--hair);border:0;margin:0}
+
+/* ---------- TYPE ---------- */
+h1{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(40px,7vw,68px);
+  line-height:1.03;letter-spacing:-.015em;text-transform:uppercase;
+}
+h2{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(27px,4vw,40px);
+  line-height:1.08;letter-spacing:-.01em;text-transform:uppercase;
+}
+h3{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:19px;letter-spacing:.02em;text-transform:uppercase;
+  margin-bottom:10px;
+}
+h4{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:13px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--burgundy);margin-bottom:12px;
+}
+p{margin-bottom:20px}
+p:last-child{margin-bottom:0}
+.lede{font-size:22px;line-height:1.52;color:var(--slate)}
+.kicker{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--khaki);margin-bottom:18px;display:block;
+}
+em,i{font-style:italic}
+strong{font-weight:700}
+a{color:var(--burgundy);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--black)}
+
+/* ---------- HERO ---------- */
+.hero{padding:104px 0 72px}
+.hero h1{margin-bottom:26px}
+.hero .lede{max-width:600px}
+.hero-meta{
+  margin-top:44px;padding-top:22px;border-top:1px solid var(--hair);
+  font-family:'Archivo',sans-serif;font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--slate);
+  display:flex;gap:28px;flex-wrap:wrap;
+}
+
+/* ---------- MODULE ---------- */
+.module{padding:72px 0;border-top:1px solid var(--hair)}
+.mod-head{display:flex;gap:22px;align-items:flex-start;margin-bottom:14px}
+.mod-num{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(38px,6vw,58px);line-height:.85;
+  color:var(--burgundy);flex-shrink:0;
+}
+.mod-title{flex:1}
+.mod-meta{
+  font-family:'Archivo',sans-serif;font-weight:600;
+  font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--khaki);margin-top:10px;
+}
+
+/* ---------- THE WIN BLOCK ---------- */
+.win{
+  border-left:3px solid var(--burgundy);
+  padding:4px 0 4px 22px;margin:30px 0;
+}
+.win .label{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--burgundy);display:block;margin-bottom:6px;
+}
+.win p{font-size:20px;line-height:1.45;margin:0}
+
+/* ---------- CARDS / PANELS (no fills, hairlines only) ---------- */
+.panel{
+  border:0;border-top:1px solid var(--hair);
+  padding:26px 0 0;margin:30px 0;
+  background:transparent;
+}
+.panel.tinted{background:transparent}
+.panel h4{margin-bottom:14px}
+
+/* ---------- LINGO ---------- */
+.lingo dl{margin:0}
+.lingo dt{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:14px;letter-spacing:.03em;text-transform:uppercase;
+  margin-top:16px;
+}
+.lingo dt:first-child{margin-top:0}
+.lingo dd{margin:4px 0 0;font-size:17px;color:var(--slate);line-height:1.5}
+
+/* ---------- LISTS ---------- */
+ul.tight,ol.tight{margin:0 0 20px 0;padding-left:22px}
+ul.tight li,ol.tight li{margin-bottom:10px}
+ul.plain{list-style:none;padding:0;margin:0 0 20px}
+ul.plain li{
+  padding-left:26px;position:relative;margin-bottom:12px;
+}
+ul.plain li:before{
+  content:"";position:absolute;left:0;top:12px;
+  width:12px;height:1px;background:var(--burgundy);
+}
+
+/* ---------- QUOTE ---------- */
+blockquote{
+  font-size:24px;line-height:1.42;font-style:italic;
+  color:var(--slate);
+  margin:32px 0;padding-left:24px;
+  border-left:1px solid var(--khaki);
+}
+blockquote cite{
+  display:block;margin-top:14px;
+  font-family:'Archivo',sans-serif;font-style:normal;font-weight:600;
+  font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--khaki);
+}
+
+/* ---------- VALOR BOX ---------- */
+.valor{
+  border-top:2px solid var(--black);
+  border-bottom:1px solid var(--hair);
+  padding:24px 0;margin:32px 0;
+}
+.valor h4{color:var(--black)}
+
+/* ---------- CHECKLIST ---------- */
+.checklist{list-style:none;padding:0;margin:18px 0 0}
+.checklist li{
+  display:flex;gap:13px;align-items:flex-start;
+  padding:11px 0;border-bottom:1px solid var(--hair-soft);
+  font-size:17px;line-height:1.45;
+}
+.checklist li:last-child{border-bottom:0}
+.checklist input[type=checkbox]{
+  appearance:none;-webkit-appearance:none;
+  width:17px;height:17px;flex-shrink:0;margin-top:5px;
+  border:1px solid var(--black);background:#fff;cursor:pointer;
+  transition:background .14s;
+}
+.checklist input[type=checkbox]:checked{background:var(--burgundy);border-color:var(--burgundy)}
+.checklist input[type=checkbox]:checked + span{color:var(--khaki);text-decoration:line-through}
+.checklist span{transition:color .14s}
+
+/* ---------- SOURCES ---------- */
+.sources{
+  border-top:1px solid var(--hair);
+  margin-top:38px;padding-top:20px;
+}
+.sources h4{color:var(--slate)}
+.sources ul{list-style:none;padding:0;margin:0}
+.sources li{
+  font-size:15px;line-height:1.5;margin-bottom:10px;color:var(--slate);
+}
+.sources a{word-break:break-word}
+
+/* ---------- FLAG / CAUTION ---------- */
+.flag{
+  border:0;border-top:2px solid var(--black);border-bottom:1px solid var(--hair);
+  padding:22px 0;margin:30px 0;
+}
+.flag h4{color:var(--burgundy)}
+.flag p{font-size:17px;line-height:1.55}
+
+/* ---------- TABLE ---------- */
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:16px}
+th{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  text-align:left;padding:10px 12px 10px 0;
+  border-bottom:1px solid var(--black);color:var(--black);
+}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--hair-soft);vertical-align:top;line-height:1.45}
+td:first-child{font-weight:700;white-space:nowrap;padding-right:20px}
+
+/* ---------- TOC ---------- */
+.toc{list-style:none;padding:0;margin:34px 0 0}
+.toc li{border-top:1px solid var(--hair)}
+.toc li:last-child{border-bottom:1px solid var(--hair)}
+.toc a{
+  display:flex;gap:20px;align-items:baseline;
+  padding:18px 4px;text-decoration:none;color:var(--black);
+  transition:padding-left .18s ease-out;
+}
+.toc a:hover{padding-left:14px;color:var(--burgundy)}
+.toc .n{
+  font-family:'Archivo Black',sans-serif;font-size:14px;
+  color:var(--khaki);width:26px;flex-shrink:0;
+}
+.toc .t{
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:16px;letter-spacing:.01em;flex:1;
+}
+.toc .d{
+  font-family:'Archivo',sans-serif;font-weight:600;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--khaki);
+  white-space:nowrap;
+}
+
+/* ---------- BUTTON ---------- */
+.btn{
+  display:inline-block;
+  font-family:'Archivo',sans-serif;font-weight:700;
+  font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  background:var(--black);color:#fff;text-decoration:none;
+  padding:15px 30px;border:1px solid var(--black);border-radius:0;
+  cursor:pointer;transition:all .17s ease-out;
+}
+.btn:hover{background:var(--burgundy);border-color:var(--burgundy);color:#fff}
+.btn.ghost{background:transparent;color:var(--black)}
+.btn.ghost:hover{background:var(--black);color:#fff}
+
+/* ---------- FOOTER ---------- */
+footer{background:transparent;color:var(--slate);border-top:1px solid var(--hair);padding:56px 0 48px;margin-top:0}
+footer .wide{display:flex;gap:48px;flex-wrap:wrap;justify-content:space-between}
+footer h4{color:var(--khaki)}
+footer p{font-size:15px;line-height:1.6;color:var(--slate);margin-bottom:6px}
+footer .motto{
+  font-family:'Archivo Black',sans-serif;font-size:18px;
+  text-transform:uppercase;letter-spacing:.02em;color:var(--black);margin-bottom:14px;
+}
+footer a{color:var(--burgundy)}
+
+@media print{
+  .nav,.btn,.no-print{display:none}
+  body{background:#fff;font-size:11pt}
+  .module{page-break-before:always;padding:24px 0}
+  footer{background:#fff;color:#000}
+  footer p,footer .motto{color:#000}
+  a{text-decoration:none;color:#000}
+}
+@media(max-width:640px){
+  section{padding:56px 0}
+  .module{padding:52px 0}
+  .hero{padding:64px 0 48px}
+  .mod-head{gap:14px}
+  blockquote{font-size:20px}
+  .lede{font-size:19px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="#top">VALOR<span>.</span> STREET TO SEAT</a>
+    <div class="nav-links">
+      <a href="#start">Start</a>
+      <a href="#m1">1</a><a href="#m2">2</a><a href="#m3">3</a><a href="#m4">4</a>
+      <a href="#m5">5</a><a href="#m6">6</a><a href="#m7">7</a><a href="#m8">8</a>
+      <a href="#lingo">Lingo</a>
+      <a href="#library">Library</a>
+    </div>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Guest Experience &amp; Assimilation / Valor Church</span>
+    <h1>Street<br>to Seat</h1>
+    <p class="lede">Eight modules on building a front door people walk through twice. Written for Abigail, built to be handed to every volunteer who comes after her.</p>
+    <div class="hero-meta">
+      <span>8 Modules</span>
+      <span>About 25 min each</span>
+      <span>Work it over 8 weeks</span>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ START HERE ============ -->
+<section id="start">
+  <div class="wrap">
+    <h2>Start Here</h2>
+    <p style="margin-top:24px">You already have the instinct. People find you. That is not a skill most people have and it is not something a course can teach. What a course can do is give you the vocabulary the rest of this world uses, the practices that have been tested by people who do this for a living, and a system that runs when you are not standing in the lobby.</p>
+
+    <p>That last part is the point. A greeter makes one person feel welcome. A guest experience lead builds a team of thirty people who make everyone feel welcome, every week, whether or not she is there. Read every module through that filter.</p>
+
+    <div class="win">
+      <span class="label">The Win For This Course</span>
+      <p>Valor has a written, repeatable path from the parking lot at Excel Academy to a person's second visit, and a trained team that can run it without you.</p>
+    </div>
+
+    <h3 style="margin-top:44px">How to work through it</h3>
+    <ul class="plain">
+      <li><strong>One module a week.</strong> Read it, do the one action step at the bottom, then move on. Do not binge it.</li>
+      <li><strong>Modules 1 through 4 are fundamentals.</strong> They are what any volunteer needs. Modules 5 through 8 are leadership and fine tuning.</li>
+      <li><strong>Every module has a "Train Your Team" block.</strong> That is the part you lift out and teach in a huddle. You can hand modules 1, 3, 4 and 5 to a brand new volunteer as their onboarding.</li>
+      <li><strong>Every claim has a source.</strong> If it is someone's opinion, this course says so. If it is a number nobody can trace, this course says that too.</li>
+    </ul>
+
+    <div class="flag">
+      <h4>Read this before you repeat any statistic</h4>
+      <p>Church hospitality material is full of confident numbers. Guests decide in 7 minutes. In 10 minutes. In 5 minutes. In 7 seconds. Almost none of them trace back to an actual study, and in at least one case the same author published two different numbers in two different documents. This course tells you who said what and whether it is research or a professional opinion. Use the practices. Be careful with the numbers. Nothing kills credibility with a smart volunteer faster than a stat that falls apart when they Google it.</p>
+    </div>
+
+    <ol class="toc">
+      <li><a href="#m1"><span class="n">01</span><span class="t">Why Welcome Is Theology, Not Customer Service</span><span class="d">20 min</span></a></li>
+      <li><a href="#m2"><span class="n">02</span><span class="t">Map the Journey Before You Fix It</span><span class="d">30 min</span></a></li>
+      <li><a href="#m3"><span class="n">03</span><span class="t">The Visit Starts on a Screen</span><span class="d">25 min</span></a></li>
+      <li><a href="#m4"><span class="n">04</span><span class="t">Parking Lot to Lobby: The Physical Front Door</span><span class="d">30 min</span></a></li>
+      <li><a href="#m5"><span class="n">05</span><span class="t">What to Actually Say to a Stranger</span><span class="d">25 min</span></a></li>
+      <li><a href="#m6"><span class="n">06</span><span class="t">Kids Check-In Is Your Real Front Door</span><span class="d">25 min</span></a></li>
+      <li><a href="#m7"><span class="n">07</span><span class="t">The Card, the Text, and the 24 Hours</span><span class="d">30 min</span></a></li>
+      <li><a href="#m8"><span class="n">08</span><span class="t">Build a Team That Outlasts You</span><span class="d">35 min</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ MODULE 1 ============ -->
+<article class="module" id="m1">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">01</div>
+      <div class="mod-title">
+        <h2>Why Welcome Is<br>Theology, Not<br>Customer Service</h2>
+        <div class="mod-meta">Fundamentals &middot; 20 minutes &middot; Give this to every volunteer</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>Your team can say why they are standing in a parking lot in the cold, and the answer is not "so the church grows."</p>
+    </div>
+
+    <p>Most greeter training starts with the handshake. Start here instead, because a volunteer who understands why will stay for years and a volunteer who only knows the mechanics will quit in six months.</p>
+
+    <h3>The word behind the word</h3>
+    <p>The New Testament term translated "hospitality" in Romans 12:13 and Hebrews 13:2 is <em>philoxenia</em>. It is built from two words: <em>phileo</em>, to love, and <em>xenos</em>, stranger. Literally, love of stranger. It is not the same as entertaining friends. The whole point of the word is the person you do not know yet.</p>
+    <p class="no-print" style="font-size:15px;color:var(--slate)"><strong>Tagging this claim:</strong> the Greek roots are directly verifiable in any lexicon and the reading is standard. Treat the etymology as solid, the devotional application as interpretation.</p>
+
+    <h3 style="margin-top:36px">The four texts most first impressions curricula use</h3>
+    <p>The Illinois Baptist State Association built the only free, full, session by session first impressions curriculum available, and it anchors on exactly four passages. Worth knowing what they are and why they picked them.</p>
+
+    <table>
+      <tr><th>Text</th><th>Why it is used</th></tr>
+      <tr><td>Matthew 9:9</td><td>Jesus calls Matthew at the tax booth. Relationship offered before reputation is repaired. Greeting is a discipleship act, not a customer service act.</td></tr>
+      <tr><td>Romans 15:7</td><td>"Welcome one another as Christ has welcomed you." The standard for the welcome is the welcome we received.</td></tr>
+      <tr><td>Hebrews 13:2</td><td>Entertaining angels unaware. You do not know who is walking in.</td></tr>
+      <tr><td>John 13:35</td><td>They will know you by your love for one another. A guest reads the room before they hear the sermon.</td></tr>
+    </table>
+
+    <p style="font-size:16px;color:var(--slate)">Three more that these curricula skip and Valor should not: <strong>Romans 12:13</strong> (practice hospitality), <strong>1 Peter 4:9</strong> (show hospitality without grumbling, which is a volunteer culture verse), and <strong>Luke 14:12-14</strong> (invite the people who cannot repay you, which is the anti self interest verse).</p>
+
+    <h3 style="margin-top:36px">The question a guest is actually asking</h3>
+    <p>Greg Curtis, who leads first steps at Eastside Christian Church and teaches assimilation nationally, says the unconscious question in any new environment is "Is there anyone here like me?" and that in a church "that starts in the parking lot." His colleague Tommy Carreras adds the follow up question: "Is anyone here worth imitating?"</p>
+    <p>Both of those get answered before the service starts. Neither of them is answered by a sermon.</p>
+
+    <blockquote>
+      Churches fail because they design for information transfer and not relationship building.
+      <cite>Tommy Carreras, Eastside Christian Church, on the unSeminary podcast</cite>
+    </blockquote>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>Valor exists to interrupt drift. Someone drifting does not walk in looking for a program. They walk in looking to see if this place is real and if anyone here is like them. Our tagline is Stop Drifting, Build Resilient Faith. The front door is where a drifting person decides whether that is a slogan or a description.</p>
+      <p style="margin-bottom:0">We also meet in a school. Nobody walks past a steeple and wanders in. Every single person who shows up on a Sunday made a decision to drive to Excel Academy. That raises the stakes on the first ninety seconds, because they already spent something to get here.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px">Ask your team, one at a time, in a huddle: <strong>"What was your first negative experience at a church?"</strong> Rich Birch uses that exact question because it flips a team out of tactics and into memory. Most volunteers have a story. Once they tell it, they stop greeting from a script.</p>
+      <p style="font-size:17px;margin-bottom:0">Then land the line Greg Atkinson tells teams to say in the huddle every single week: <strong>"It is always someone's first Sunday."</strong></p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Write three sentences on why you personally took this role. Not the job description. The reason. You will use it every time you recruit.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 1</h4>
+      <ul>
+        <li>IBSA First Impressions Training, Session 1 Workbook, Key Scriptures section (free PDF, 42 pages): <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions-Training-Session_1_Work.pdf">ibsa.org</a></li>
+        <li>Greg Curtis and Tommy Carreras on assimilation, unSeminary: <a href="https://unseminary.com/theyre-looking-for-god-dont-miss-them-fixing-your-churchs-assimilation-problem-with-greg-curtis-tommy-carreras/">unseminary.com</a></li>
+        <li>Rich Birch, 5 Training Experiences to Help Your Team Feel Like First Time Guests: <a href="https://unseminary.com/5-training-experiences-to-help-your-team-feel-like-first-time-guests/">unseminary.com</a></li>
+        <li>Greg Atkinson, Five Tips from a Church Secret Shopper: <a href="https://www.xpastor.org/strategy/growth-vision/five-tips-from-a-secret-shopper/">xpastor.org</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 2 ============ -->
+<article class="module" id="m2">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">02</div>
+      <div class="mod-title">
+        <h2>Map the Journey<br>Before You Fix It</h2>
+        <div class="mod-meta">Fundamentals &middot; 30 minutes &middot; Do this one with a notebook</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>You have walked Valor's Sunday as a stranger would, in order, and written down every place a guest could get stuck.</p>
+    </div>
+
+    <h3>Where the phrase comes from</h3>
+    <p>"Street to the seat" traces to Nelson Searcy's book <em>Fusion: Turning First Time Guests into Fully Engaged Members of Your Church</em> (Regal, 2008). Chapter three is titled "Seven Minutes and Counting," and Searcy breaks the arrival into four moves a guest needs: <strong>Greeted, Directed, Treated, Seated.</strong></p>
+    <p>That four word chain is the most useful thing in the whole first impressions world. Memorize it. Every failure on a Sunday morning is one of those four missing.</p>
+
+    <div class="flag">
+      <h4>About the seven minutes</h4>
+      <p>Searcy wrote: "Seven minutes is all you get to make a positive first impression." He states it as a conviction from his own church's guest surveys. He does not cite a study, and no study exists. Other well known voices give different numbers. Greg Atkinson says ten minutes. ServeHQ says five. One curriculum says seven seconds in one document and seven minutes in another. <strong>Use the concept, which is real and obvious: the decision happens early, before the preaching. Do not quote a number as research.</strong></p>
+    </div>
+
+    <h3 style="margin-top:36px">The bigger map: three journeys</h3>
+    <p>Greg Curtis frames the whole assimilation path as three journeys, named from the guest's point of view rather than the church's org chart. This is the frame worth adopting because it tells you where your lane ends.</p>
+
+    <table>
+      <tr><th>Journey</th><th>What it is</th></tr>
+      <tr><td>Screen to Seat</td><td>The BELONGING journey. Website, social, parking, greeters, kids check in, ushers. Curtis notes many churches report guests watch online several times before ever attending in person, which is why he changed "street" to "screen."</td></tr>
+      <tr><td>Seat to Circle</td><td>The GROWING journey. Into a group, a team, or one program where formation actually happens.</td></tr>
+      <tr><td>Circle to Street</td><td>The GOING journey. Equipped to live and witness outside the building.</td></tr>
+    </table>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>Your lane is journey one and the handoff into journey two. Concretely: everything from the moment someone Googles Valor through their arrival at <strong>Discover Valor</strong>, which is step two of our pathway. Nathan Ewing owns <strong>Next Steps</strong>, which is step three. The exchange zone between you and Nathan is Discover Valor into Next Steps.</p>
+      <p style="margin-bottom:0">Valor's documented pathway, in order: <strong>Meet the Pastor</strong> (informal, right after service, non communion Sundays only) into <strong>Discover Valor</strong> (30 minute class) into <strong>Next Steps</strong> (Nathan) into <strong>All In</strong> (membership, quarterly, off site). Any pastoral need that surfaces in your lane routes to Nathan or Justin. You are not carrying pastoral care.</p>
+    </div>
+
+    <h3 style="margin-top:36px">The exercise: walk it with a new nose</h3>
+    <p>Greg Atkinson's governing metaphor for this work is smell. He painted a hallway in his house, stopped noticing the paint fumes within hours, then walked back in from outside and got hit with it all over again. His instruction to church leaders: "As best you can, try to walk into the lobby or entrance of your church with a new nose."</p>
+    <p>Here is his actual route as a paid secret shopper, in order. Copy it.</p>
+
+    <ol class="tight">
+      <li><strong>Days before.</strong> Website. Facebook. Instagram. Google. He weights this so heavily he once wrote thirteen report pages on online presence before ever driving to the campus.</li>
+      <li><strong>Parking lot.</strong> Where do I park. Is anyone outside. Is there a sign.</li>
+      <li><strong>Restrooms.</strong> He goes straight there. In rented venues he says you may need your own cleaning crew hitting the bathrooms before people arrive.</li>
+      <li><strong>Ushers and security.</strong> Who noticed me. Who did not.</li>
+      <li><strong>Nursery and kids space.</strong> Clean, safe, secure. Those are his three checkpoints.</li>
+      <li><strong>Auditorium.</strong> Last, not first.</li>
+    </ol>
+    <p>He deliberately loiters in the low attention zones, because that is where the truth is. And he is honest about the limit of self auditing: a person who already belongs cannot fully see it. If you can, send someone who has never attended Valor and have them walk it cold.</p>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px;margin-bottom:0">Take your team to secret shop another church. Rich Birch says two mistakes will ruin it: assuming the other church is just like yours, and assuming their failures could never happen at yours. Scout ahead, give each person two specific things to notice, then debrief over lunch. He also suggests a synagogue or a mosque, because it puts your team in the genuinely disoriented seat: shoes on or off, do I stand, do I sit, where do I go. That is what a guest feels.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Walk Valor's Sunday in Atkinson's order, alone, with a phone note open. Write one line per stop. Do not fix anything yet. Just document it.</span></li>
+        <li><input type="checkbox"><span>Mark every stop with Greeted, Directed, Treated, or Seated. Circle the missing ones.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 2</h4>
+      <ul>
+        <li>Nelson Searcy, <em>Fusion</em> (Regal, 2008), ch. 3, quoted at length: <a href="https://28nineteen.com/fusion-seven-minutes-and-counting/">28nineteen.com</a> and <a href="https://28nineteen.com/fusion-street-to-the-seat/">the Greeted / Directed / Treated / Seated breakdown</a></li>
+        <li>Greg Atkinson, Lessons from a Church Secret Shopper (the "new nose" piece): <a href="https://churchleaders.com/pastors/pastor-articles/138174-lessons-from-a-church-secret-shopper.html">churchleaders.com</a></li>
+        <li>Greg Atkinson's shopping route, reported: <a href="https://baptistnews.com/article/secret-church-shopper-reports-quality-of-welcome-determines-if-guests-will-visit-a-second-time/">baptistnews.com</a></li>
+        <li>Greg Curtis, three journeys: <a href="https://unseminary.com/theyre-looking-for-god-dont-miss-them-fixing-your-churchs-assimilation-problem-with-greg-curtis-tommy-carreras/">unseminary.com</a></li>
+        <li>IBSA Session 1 Workbook contains a printable 7 Minute Journey Map template: <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions-Training-Session_1_Work.pdf">ibsa.org PDF</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 3 ============ -->
+<article class="module" id="m3">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">03</div>
+      <div class="mod-title">
+        <h2>The Visit Starts<br>on a Screen</h2>
+        <div class="mod-meta">Fundamentals &middot; 25 minutes &middot; Give this to every volunteer</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>Someone who has never met us can find our address, our service time, what to wear, and what happens to their kid, in under sixty seconds and without scrolling.</p>
+    </div>
+
+    <p>The first impression happens days before the handshake. Atkinson evaluates online presence before he ever gets in the car. Curtis renamed the whole first journey "screen to seat" for this reason.</p>
+
+    <h3>What has to be findable</h3>
+    <p>Rich Birch's list of what a church website must have for a first time guest: address and service times, past messages, kids ministry information, and a clear sense of what this church actually cares about. He cites survey work suggesting roughly half of new visitors check the website first.</p>
+
+    <ul class="plain">
+      <li><strong>Address and service time above the fold.</strong> Not on a contact page. On the homepage, without scrolling. Ours: 11500 W 84th Ave, Arvada, CO 80005. Sundays at 10a.</li>
+      <li><strong>What to expect.</strong> Interior photos, not exterior. A guest wants to see the room and the people, not the sign.</li>
+      <li><strong>Kids information that answers the actual fear.</strong> Not "we love kids." Rather: how check in works, who is with my child, how I get them back.</li>
+      <li><strong>Past messages.</strong> They will sample the preaching before they sample the parking lot.</li>
+    </ul>
+
+    <h3 style="margin-top:36px">Social is a preview, not a bulletin board</h3>
+    <p>Birch's guidance: post what to expect content. Interior photos. Live video. Weekly highlight videos. The job of the feed is to lower the unknown, not to announce events to people who already come.</p>
+    <p>IBSA suggests a simple three post weekly rhythm that a volunteer can run: <strong>message recap, midweek story, weekend invite.</strong> That is a rhythm someone can hand off.</p>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>We are a mobile church in a school building, which means online is doing more work for us than for a church with a building on a corner. Someone driving past Excel Academy on a Tuesday learns nothing about Valor. The website and the feed are the building.</p>
+      <p style="margin-bottom:0">Our handle is <strong>@myvalorchurchco</strong> and the URL is <strong>valor.church</strong>, always lowercase. Kate Wojick manages Google Business Profile and social scheduling, so the online front door is a shared lane. Your job is not to run the accounts. Your job is to be the person who says "a first time guest cannot find X" and get it fixed.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px;margin-bottom:0">Hand a volunteer your phone and say: "You have never heard of this church. Your kid is four. Find out where to go on Sunday and what happens to your kid." Watch without helping. Time it. Whatever they struggle with is the fix list.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Run the phone test above on valor.church with two people who do not attend Valor. Write down every question they could not answer.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 3</h4>
+      <ul>
+        <li>Rich Birch, 21 Easy Ways for Your Church to Be More First Time Guest Friendly (items 2 and 3): <a href="https://unseminary.com/21-easy-ways-for-your-church-to-be-more-first-time-guest-friendly/">unseminary.com</a></li>
+        <li>Greg Atkinson on weighting online presence: <a href="https://churchleaders.com/outreach-missions/outreach-missions-how-tos/151528-4-keys-to-creating-irresistible-church.html">churchleaders.com</a></li>
+        <li>IBSA Session 2 Workbook, The Digital Doorway (free PDF): <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions_Session_2.pdf">ibsa.org</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 4 ============ -->
+<article class="module" id="m4">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">04</div>
+      <div class="mod-title">
+        <h2>Parking Lot<br>to Lobby</h2>
+        <div class="mod-meta">Fundamentals &middot; 30 minutes &middot; Give this to every volunteer</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>A stranger never has to ask a single question to find the door, the coffee, the bathroom, or their kid's room.</p>
+    </div>
+
+    <h3>The rules that are not negotiable</h3>
+    <p>These come from Greg Atkinson's secret shopper work and Life.Church's greeter guidelines. They are behavioral, they are teachable in ten minutes, and violating them is what shows up in every negative report.</p>
+
+    <ul class="plain">
+      <li><strong>Hands free.</strong> No coffee cup. No phone. Atkinson: "If your team member is distracted by looking at their cell phone, it is one of the rudest and worst first impressions you can give a newcomer." Hands are for doors, handshakes, and pointing the way.</li>
+      <li><strong>Do not talk to each other.</strong> Parking attendants spread out, not bunched up. Two volunteers in conversation while a guest walks past is the single most common failure.</li>
+      <li><strong>Escort, do not point.</strong> Life.Church's written guideline: "Personally escort any guest who asks where something is located. Avoid pointing." Walk them.</li>
+      <li><strong>Greet the car, not the person.</strong> Wave and smile at vehicles pulling in. The welcome starts before they park.</li>
+      <li><strong>Four words for anyone who looks lost or looks off:</strong> "May I help you?" Atkinson teaches this as hospitality and as a security posture at the same time.</li>
+      <li><strong>Be there when it ends.</strong> Teams at their posts after the service to say goodbye, not just hello. Atkinson calls this "finish strong."</li>
+    </ul>
+
+    <h3 style="margin-top:36px">Signage: design for three distances</h3>
+    <p>Birch's framing is the most practical thing written on church signage. Every exterior sign has to be readable at three distances: <strong>from the moving car, from about thirty five feet out, and standing at the door.</strong> One sign rarely does all three. Count every exterior door and ask what a guest sees at each one.</p>
+    <p>Inside, wayfinding signage has to answer exactly four questions immediately: <strong>where do I drop my kid, where is coffee, where is the bathroom, where is the service.</strong> If those four are not answered in the first ten feet, you have a signage problem, not a friendliness problem.</p>
+
+    <h3 style="margin-top:36px">The unglamorous list</h3>
+    <ul class="plain">
+      <li><strong>Bathrooms.</strong> Birch says wipe down counters multiple times per Sunday. Atkinson says in a rented venue you may need to bring your own crew. Both are talking about us.</li>
+      <li><strong>Declutter the lobby.</strong> Birch's benchmark is a good airport. Assign the decluttering to a person, not to everyone.</li>
+      <li><strong>Put away the backstage stuff.</strong> Vacuum, stacked chairs, cases, cables.</li>
+      <li><strong>Smell.</strong> It is an actual chapter in Atkinson's book. You cannot smell your own building.</li>
+      <li><strong>Identifiable team.</strong> Shirts or lanyards that stand out. The goal is that a guest can spot a helper from across a room, not that volunteers get swag.</li>
+    </ul>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>We load in and tear down every single Sunday out of two connex trailers. That means our signage has to be portable, our lobby is a school hallway we do not control, and our bathrooms were used by teenagers on Friday. None of that is an excuse. It is a job description.</p>
+      <p>Two specific implications. First, <strong>signage is a setup task with an owner and a checklist</strong>, not something someone remembers. Second, <strong>teardown starts while guests are still in the building.</strong> Someone stacking a road case behind a family who is deciding whether to come back is a real cost. Protect a clean fifteen minutes after service before visible teardown starts.</p>
+      <p style="margin-bottom:0">Address on every sign and every post: 11500 W 84th Ave, Arvada, CO 80005. Sundays at 10a.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px">Run role plays. IBSA's free workbook has four drills already written: <strong>Lost and Late, New and Alone, Multilingual Barrier, The Reserved Teen.</strong> Ten minutes in a huddle, two volunteers, everyone else watches. It feels awkward once and then it is the most useful thing you do all month.</p>
+      <p style="font-size:17px;margin-bottom:0">And say this out loud to the team, because Atkinson says every guest services team secretly believes the opposite: <strong>this is not the B team.</strong> Volunteers assume they are at the door because they cannot sing or run sound. Overcorrect that in public.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Stand at the main entrance for one full Sunday and count how many people have a phone or a coffee in their hand while a guest walks past. Do not correct anyone that day. Bring the number to the next huddle.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 4</h4>
+      <ul>
+        <li>Greg Atkinson, Five Tips from a Church Secret Shopper: <a href="https://www.xpastor.org/strategy/growth-vision/five-tips-from-a-secret-shopper/">xpastor.org</a></li>
+        <li>Greg Atkinson, 8 Reasons Your Guests Might Not Return (finish strong, signage, smell): <a href="https://worshipimpressions.com/2020/03/10/church-secret-shopper-guest-experience-reasons-your-easter-guests-might-not-return/">worshipimpressions.com</a></li>
+        <li>Rich Birch, 21 Easy Ways (items 4 through 14): <a href="https://unseminary.com/21-easy-ways-for-your-church-to-be-more-first-time-guest-friendly/">unseminary.com</a></li>
+        <li>Life.Church Greeting Team Guidelines, one page role sheet, free PDF: <a href="https://leaders.life.church/wp-content/uploads/2016/09/LC_HT_GreetingTeam.pdf">leaders.life.church</a></li>
+        <li>IBSA Session 1 Workbook, role play drills and audit checklist: <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions-Training-Session_1_Work.pdf">ibsa.org PDF</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 5 ============ -->
+<article class="module" id="m5">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">05</div>
+      <div class="mod-title">
+        <h2>What to Actually<br>Say to a Stranger</h2>
+        <div class="mod-meta">Practice &middot; 25 minutes &middot; Give this to every volunteer</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>A nervous volunteer has three questions in their pocket and knows the one goal is a name, not a sale.</p>
+    </div>
+
+    <h3>Redefine the win out loud</h3>
+    <p>The best line in all of this material is Tommy Carreras describing what he tells a volunteer who thinks their job is to sell the church:</p>
+
+    <blockquote>
+      I got to sell the church. Nope. No, no, no. You got to remember their name and ask three personal questions about them. That is my goal for you. Just do that.
+      <cite>Tommy Carreras, Eastside Christian Church</cite>
+    </blockquote>
+
+    <p>That is the whole module. Everything below is scaffolding for people who freeze.</p>
+
+    <h3 style="margin-top:36px">F.O.R.D.</h3>
+    <p>A small talk framework IBSA teaches in its welcome team guide. Four safe territories, in escalating order of intimacy.</p>
+    <table>
+      <tr><td>F</td><td>Friends and family. Who did you come with.</td></tr>
+      <tr><td>O</td><td>Occupation. What do you do during the week.</td></tr>
+      <tr><td>R</td><td>Recreation. What do you do when you are not working.</td></tr>
+      <tr><td>D</td><td>Dreams. What are you hoping for. This one is last for a reason.</td></tr>
+    </table>
+    <p>Most volunteers get stuck after "how are you." F.O.R.D. gives them somewhere to go without being invasive.</p>
+
+    <h3 style="margin-top:36px">Kill the jargon</h3>
+    <p>Rich Birch defines jargon precisely: "a subtle social tool used to define the boundaries of who is a part of the group." That is why it matters. It is not that the words are wrong. It is that they sort people into insiders and outsiders in real time.</p>
+    <p>The phrases he names, which you can put on a card for your team:</p>
+    <ul class="tight" style="font-size:17px">
+      <li>"The Lord is working in my heart"</li>
+      <li>"During my quiet time"</li>
+      <li>"A lost sheep, straying from the fold"</li>
+      <li>"A time of communion and fellowship"</li>
+      <li>"Hedge of protection"</li>
+      <li>"Share my testimony"</li>
+      <li>"Burdens on my heart"</li>
+      <li>"Do you know where you are going to spend eternity?"</li>
+      <li>"Lord willing"</li>
+    </ul>
+    <p style="font-size:16px;color:var(--slate)">Note this is about the lobby, not the pulpit. Preaching gets to define its terms. A greeter does not have that luxury.</p>
+
+    <h3 style="margin-top:36px">Give one next step, not a menu</h3>
+    <p>Carreras again: "If you give somebody A, B, C and D, they will choose E, none of the above." Recommend one thing. Take yes or no. If it is no, ask what they are actually looking for and then recommend one other thing.</p>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>Our single recommended next step for a first time guest is <strong>Meet the Pastor</strong>, immediately after service, on non communion Sundays. It is informal, it is short, and Justin is right there. That is the smallest possible ask, and small is the point.</p>
+      <p style="margin-bottom:0">On communion Sundays Meet the Pastor does not happen. Your team has to know which Sunday it is before the doors open, because "come meet the pastor" on a week when it is not running is worse than saying nothing.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px;margin-bottom:0">Print three things on a wallet card for every volunteer: the F.O.R.D. letters, the jargon list, and the sentence "remember their name and ask three questions." Nothing else. A card with twenty items gets left in a car.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Write Valor's version of the wallet card. One side, nine lines maximum.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 5</h4>
+      <ul>
+        <li>Tommy Carreras on redefining the volunteer win and on option overload: <a href="https://unseminary.com/theyre-looking-for-god-dont-miss-them-fixing-your-churchs-assimilation-problem-with-greg-curtis-tommy-carreras/">unseminary.com</a></li>
+        <li>Rich Birch, jargon definition and the nine phrases, item 16: <a href="https://unseminary.com/21-easy-ways-for-your-church-to-be-more-first-time-guest-friendly/">unseminary.com</a></li>
+        <li>IBSA, First Impressions That Wow, F.O.R.D. method and magic phrases, free PDF: <a href="https://www.ibsa.org/wp-content/uploads/2025/03/First_Impressions_That_Wow_Transform_Your_Welcome.pdf">ibsa.org</a></li>
+        <li>IBSA Greeter Training fill in the blanks, nonverbal communication and guest typology, free PDF: <a href="https://www.ibsa.org/wp-content/uploads/2025/03/IBSA_Greeter_Training_Fill_in_the_Blanks.pdf">ibsa.org</a></li>
+        <li>Free ServeHQ greeter videos, no login: <a href="https://servehq.church/free/church-greeter-training/">servehq.church</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 6 ============ -->
+<article class="module" id="m6">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">06</div>
+      <div class="mod-title">
+        <h2>Kids Check-In Is<br>Your Real<br>Front Door</h2>
+        <div class="mod-meta">Practice &middot; 25 minutes &middot; Run this one with Lacy</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>A first time family is walked through check in by a named person, and their information reaches the follow up system the same way a connect card would.</p>
+    </div>
+
+    <h3>The finding that should change your priorities</h3>
+    <p>Tommy Carreras, on why churches miss most of their new people:</p>
+    <blockquote>
+      If you are not treating your new families like new guests, you are ignoring them. They are giving you all the info besides their social security number.
+      <cite>Tommy Carreras, Eastside Christian Church</cite>
+    </blockquote>
+    <p>He states that thirty to forty percent of a church's new guest leads come in through kids check in. Treat that as his professional observation from working with churches, not as published research. Even discounted, the implication holds: <strong>the family that hands over a child's name, allergies, and a phone number never fills out a connect card, and most churches never count them.</strong></p>
+
+    <h3 style="margin-top:36px">The three checkpoints</h3>
+    <p>Atkinson's whole evaluation of children's ministry reduces to three words: <strong>clean, safe, secure.</strong> He ranks children's ministry second only to first impressions in his weighted priority list, ahead of worship.</p>
+
+    <ul class="plain">
+      <li><strong>A dedicated first time check in person.</strong> Birch's item eight. Someone whose only job is new families, and who is free to leave the desk and walk with them. He acknowledges this person "might not be busy the entire morning." That is the correct use of a volunteer.</li>
+      <li><strong>Walk them to the room.</strong> Atkinson: a volunteer walks the parent through registration, then that person or another helper walks them to the classroom explaining what will happen and how pickup works.</li>
+      <li><strong>Explain the sticker system before it is needed.</strong> A parent who does not understand pickup will spend the entire service thinking about it.</li>
+      <li><strong>Never skip the matching tag at pickup.</strong> Atkinson: "If anyone can walk into a classroom and pick up a kid, you are asking for trouble." No exceptions for people you recognize. The rule only works if it is visibly absolute.</li>
+      <li><strong>Signage for kids check in starts in the parking lot.</strong> Not at the door. Birch and Atkinson both land here.</li>
+      <li><strong>Roamers during check in and check out.</strong> Birch's item fourteen. Someone whose job is the parent doing the long slow walk away from a crying two year old.</li>
+    </ul>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>Lacy McKay owns Valor Kids. This module is a shared build, not yours alone. The specific thing to solve together: <strong>a first time family currently enters our data through kids check in, but the guest follow up runs off the connect card.</strong> Those are two different doors and one of them is not wired to the follow up.</p>
+      <p style="margin-bottom:0">Ask Glenn Jacobsen how kids check in data routes today. He owns the systems layer, including connect card routing and Planning Center accuracy. Do not build a parallel spreadsheet. Fix the routing that already exists.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px;margin-bottom:0">Carreras's fix is one sentence and it costs nothing: <strong>do not wait for new families to visit the guest table. Bring the guest table to them.</strong> Station a welcome person at kids check in rather than only in the lobby.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Sit down with Lacy and Glenn for twenty minutes. One question: when a brand new family checks in a child, what happens to that family's information by Monday morning? Write down the actual answer, not the intended one.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 6</h4>
+      <ul>
+        <li>Tommy Carreras on the kids ministry blind spot: <a href="https://unseminary.com/theyre-looking-for-god-dont-miss-them-fixing-your-churchs-assimilation-problem-with-greg-curtis-tommy-carreras/">unseminary.com</a></li>
+        <li>Greg Atkinson, weighted priorities and children's ministry: <a href="https://churchleaders.com/outreach-missions/outreach-missions-how-tos/151528-4-keys-to-creating-irresistible-church.html">churchleaders.com</a></li>
+        <li>Greg Atkinson on check in, escorting, and pickup security: <a href="https://worshipimpressions.com/2020/03/10/church-secret-shopper-guest-experience-reasons-your-easter-guests-might-not-return/">worshipimpressions.com</a></li>
+        <li>Rich Birch, items 8 and 14: <a href="https://unseminary.com/21-easy-ways-for-your-church-to-be-more-first-time-guest-friendly/">unseminary.com</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 7 ============ -->
+<article class="module" id="m7">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">07</div>
+      <div class="mod-title">
+        <h2>The Card,<br>the Text, and<br>the 24 Hours</h2>
+        <div class="mod-meta">Fine tuning &middot; 30 minutes &middot; Leadership level</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>Every first time guest is contacted by a real named human within 24 hours, and nobody has to remember to do it.</p>
+    </div>
+
+    <h3>Speed is the whole game</h3>
+    <p>Rich Birch's item twenty, stated plainly: "If you wait until Tuesday to email people who came last weekend, move that follow up back to Sunday evening." He also ranks the channels: <strong>phone calls and handwritten notes beat email.</strong></p>
+    <p>IBSA's free curriculum lays out the only complete four stage cadence available for free:</p>
+    <table>
+      <tr><th>Stage</th><th>Timing and channel</th></tr>
+      <tr><td>Immediate</td><td>0 to 24 hours. Text or email.</td></tr>
+      <tr><td>Intentional</td><td>3 to 5 days. Phone call, handwritten note, or a welcome lunch.</td></tr>
+      <tr><td>Pre-weekend</td><td>Saturday night text.</td></tr>
+      <tr><td>Ongoing</td><td>2 to 3 weeks out. Coffee, group invite, or serve invite.</td></tr>
+    </table>
+    <p>IBSA also names the three ways follow up dies: <strong>over automation, no relational handoff, and no clear next step.</strong> Every one of those is a system that technically ran and still failed.</p>
+
+    <h3 style="margin-top:36px">Connect cards: fewer fields, more cards</h3>
+    <p>Brady Shearer's rule, verbatim: "The more form fields you display on a connect card, the fewer cards you will have filled out." He cites Barna data that millennials will give a first name, roughly half are comfortable giving a last name, and only about thirty percent are okay giving an email address.</p>
+    <p>His design specifications, which are worth copying regardless of what platform you use:</p>
+    <ul class="plain">
+      <li><strong>Postcard shape, not a flyer.</strong> Reads as friendly rather than promotional.</li>
+      <li><strong>Color code it and refer to it by color from the stage.</strong> "The blue card." Not "our connect card," which is jargon.</li>
+      <li><strong>Break the ask into steps.</strong> Old flow: fill out this whole card. New flow: scan a QR code, then one question at a time. He cites Jotform data that one question per screen converts about thirty six percent better.</li>
+      <li><strong>Phone number is optional. Say so on the form.</strong></li>
+      <li><strong>Point the QR code at a redirect URL, not the final page.</strong> Send it to valor.church/qr-connect which forwards to the real form. Now you can change the destination without reprinting a single card. This is the single most practical tip in the whole body of material.</li>
+      <li><strong>Make a 16:9 screen version of the card</strong> so the online guest and the in person guest do the same thing.</li>
+    </ul>
+
+    <h3 style="margin-top:36px">The email that gets a reply</h3>
+    <p>Shearer's automated first email has three deliberate design choices, and all three are transferable:</p>
+    <ul class="plain">
+      <li><strong>From a real person's name</strong>, not the church name. "Abigail from Valor," not "Valor Church."</li>
+      <li><strong>Ask a question that requires a reply.</strong> His version asks the guest to reply with which charity they want the church's five dollar donation sent to.</li>
+      <li><strong>The reply is the point.</strong> It connects the guest to a human, and it marks your sending address as a safe sender so future emails do not land in spam.</li>
+    </ul>
+    <p style="font-size:16px;color:var(--slate)">Worth naming: Shearer's system runs on Nucleus, which is his own product. The principles above are platform neutral and worth teaching. The tooling recommendation is a sales funnel. Take the first, ignore the second.</p>
+
+    <div class="flag">
+      <h4>A number you will hear repeated</h4>
+      <p>Atkinson writes that if a guest returns for a second visit "you have won 80% of the battle." Rich Birch says people who do not take a step in their first 100 days generally never connect, attributing it to "some churches that have done extensive studies." Neither names a study. Both are experienced practitioners and both may be right. State them as convictions from named people, not as findings.</p>
+    </div>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>Two follow up motions already exist and you inherit both. <strong>Nathan Ewing</strong> gets a notification for every guest logged through the post service connect card submission and sends a personal thank you text no later than Monday 10 AM: thanks, questions, how can I help. Separately there is a <strong>24 hour first time guest follow up email.</strong></p>
+      <p style="margin-bottom:0">Your first job here is not to add a third motion. It is to confirm those two actually fire every week, find out who is falling through, and make the handoff into <strong>Discover Valor</strong> explicit. Glenn owns the routing. Nathan owns the text. You own whether the person actually lands.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px;margin-bottom:0">Write the announcement script and hand it to whoever is on stage, by Wednesday. Shearer's model: hold the physical card while you say it, run a matching slide, name the card by color, and describe the mechanic in one sentence. Never let the person on stage improvise this.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Take the last four Sundays of connect cards. For each guest, write down what actually happened and when. That gap analysis is your entire first ninety days of work.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 7</h4>
+      <ul>
+        <li>Brady Shearer, The Ultimate Church Guest Follow-Up System: <a href="https://prochurchtools.com/blog-post/church-visitor-follow-up">prochurchtools.com</a></li>
+        <li>Brady Shearer, Modern Church Connection Cards: <a href="https://prochurchtools.com/blog-post/modern-church-connection-cards-examples">prochurchtools.com</a></li>
+        <li>Rich Birch, item 20 on follow up speed: <a href="https://unseminary.com/21-easy-ways-for-your-church-to-be-more-first-time-guest-friendly/">unseminary.com</a></li>
+        <li>IBSA Session 2 Workbook, four stage pathway plus five ready to use scripts, free PDF: <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions_Session_2.pdf">ibsa.org</a></li>
+        <li>Rich Birch on the 100 day claim and John Sellers' six week Planning Center workflow: <a href="https://unseminary.com/stop-losing-first-time-guests-whats-working-at-the-front-door-right-now/">unseminary.com</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ MODULE 8 ============ -->
+<article class="module" id="m8">
+  <div class="wrap">
+    <div class="mod-head">
+      <div class="mod-num">08</div>
+      <div class="mod-title">
+        <h2>Build a Team<br>That Outlasts You</h2>
+        <div class="mod-meta">Fine tuning &middot; 35 minutes &middot; Leadership level</div>
+      </div>
+    </div>
+
+    <div class="win">
+      <span class="label">The Win</span>
+      <p>You can be gone on a Sunday and a guest cannot tell.</p>
+    </div>
+
+    <p>This is the module the whole course was built for. Everything before it can be done by a warm person. This one cannot.</p>
+
+    <h3>Numbers worth watching</h3>
+    <p>Rich Birch's weekend metrics, useful as rough targets rather than laws:</p>
+    <ul class="plain">
+      <li><strong>New guest volume.</strong> His rule of thumb: yearly new guests should roughly equal a single Sunday's attendance. His worked example: 200 in attendance means about four new guests a weekend.</li>
+      <li><strong>Volunteer percentage.</strong> Plateaued churches run around twenty percent of adults serving. Growing churches he observes run about thirty percent. Three hundred in attendance means roughly one hundred serving.</li>
+      <li><strong>First time volunteers.</strong> The metric he weights most. "If your volunteer influx reaches zero, you have a pipeline problem that you will not necessarily feel the pain of today but certainly will in six months to a year." He adds that the trajectory matters more than the absolute number.</li>
+    </ul>
+    <p style="font-size:16px;color:var(--slate)">These are Birch's observations from consulting, not survey data. Use them to notice direction, not to grade yourself.</p>
+
+    <h3 style="margin-top:36px">Staff above the minimum</h3>
+    <p>Birch's item ten: build the team past what a Sunday strictly requires, so people can leave their post without a hole opening. Some churches designate people to <strong>"swim the lobby"</strong>, meaning they have no station at all. Their assignment is to move and find the person standing alone.</p>
+
+    <h3 style="margin-top:36px">A real onboarding path</h3>
+    <p>IBSA's six step volunteer onboarding framework, which is the cleanest free version of this and maps directly onto what Valor needs written down:</p>
+    <ol class="tight" style="font-size:17px">
+      <li><strong>Interest and invitation.</strong> Someone asks them personally. Not a stage announcement.</li>
+      <li><strong>Orientation.</strong> What this team is for and what the win is.</li>
+      <li><strong>Shadowing.</strong> They follow someone for a Sunday with no responsibility.</li>
+      <li><strong>First serve.</strong> Paired, not solo.</li>
+      <li><strong>Feedback and coaching.</strong> Within a week, specific, in person.</li>
+      <li><strong>Integration and celebration.</strong> They are named in front of the team.</li>
+    </ol>
+    <p>Most churches do steps one and four and wonder why volunteers evaporate.</p>
+
+    <h3 style="margin-top:36px">Train the feeling, not just the tactics</h3>
+    <p>Birch's argument is that guest services training fails because it teaches procedures to people who have forgotten what disorientation feels like. His five experiences, which are genuinely worth doing:</p>
+    <ul class="plain">
+      <li><strong>Take the team to play bingo.</strong> A subculture with rituals, lucky charms, reserved seats, and its own vocabulary. His point: all the trappings of a religious experience, and you will feel like an outsider inside of five minutes.</li>
+      <li><strong>Secret shop another church.</strong> Scout first, assign two things to notice, debrief over lunch.</li>
+      <li><strong>Have the team share their own first time experiences.</strong> Including the negative one.</li>
+      <li><strong>Go to a theme park.</strong> Parking, arrival flow, strollers, accessibility, cleanliness. All of it maps.</li>
+      <li><strong>Visit a synagogue or a mosque.</strong> Shoes on or off. Do I stand. Where do I sit. That is exactly what your guest feels.</li>
+    </ul>
+
+    <h3 style="margin-top:36px">The staff rule</h3>
+    <p>Carreras, on leadership presence: "If you are on staff and you are hiding in the green room, fix that." Atkinson's version is a list of models he endorses for pastor accessibility: a staffed guest central spot, the pastor at the front to pray after service, or the pastor simply walking the lobby. Any of them beats disappearing.</p>
+
+    <div class="valor">
+      <h4>What This Looks Like at Valor</h4>
+      <p>Two dates shape everything in this module. <strong>Two services starting August 30</strong> roughly doubles the volunteer requirement and creates a between services window that is the highest risk moment on a Sunday. And <strong>full teardown every week</strong> means your volunteers are competing with a load out for the same bodies.</p>
+      <p>Your Arranger is the reason this role exists. Do not become the best greeter at Valor. Become the person who builds a team that greets like you and runs without you. The line to hold: a role limited to greeting will not hold you, and a team that depends on you is not a team.</p>
+      <p style="margin-bottom:0">Lane boundaries, so they are written down. You own the front of the funnel through Discover Valor. Nathan owns Next Steps and formation. Glenn owns systems and data routing. Pastoral needs route to Nathan or Justin. You monitor back door dropoff. You do not carry pastoral care.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Train Your Team On This</h4>
+      <p style="font-size:17px;margin-bottom:0">Birch's staff meeting question, which is the right closing exercise for this whole course: <strong>"Which of these pieces is the weakest in our church right now, and what is the smallest move we could make in the next 30 days?"</strong> Ask it every quarter.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Your One Action Step This Week</h4>
+      <ul class="checklist">
+        <li><input type="checkbox"><span>Write the Valor welcome team onboarding path using the six steps above. One page. Then name three people you will personally invite this month.</span></li>
+        <li><input type="checkbox"><span>Draft the two service Sunday plan for August 30, specifically the between services window. Bring it to Justin and Glenn.</span></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Sources for Module 8</h4>
+      <ul>
+        <li>Rich Birch, 7 Other Weekend Metrics Church Leaders Should Study Regularly: <a href="https://unseminary.com/7-other-weekend-metrics-church-leaders-should-study-regularly/">unseminary.com</a></li>
+        <li>Rich Birch, 5 Training Experiences to Help Your Team Feel Like First Time Guests: <a href="https://unseminary.com/5-training-experiences-to-help-your-team-feel-like-first-time-guests/">unseminary.com</a></li>
+        <li>IBSA Session 1 Workbook, six step volunteer onboarding framework and team covenant: <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions-Training-Session_1_Work.pdf">ibsa.org PDF</a></li>
+        <li>Greg Atkinson on the B team problem and pastor accessibility: <a href="https://www.xpastor.org/strategy/growth-vision/five-tips-from-a-secret-shopper/">xpastor.org</a></li>
+        <li>IBSA, First Impressions That Wow, volunteer culture and scheduling: <a href="https://www.ibsa.org/wp-content/uploads/2025/03/First_Impressions_That_Wow_Transform_Your_Welcome.pdf">ibsa.org PDF</a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- ============ LINGO ============ -->
+<article class="module" id="lingo">
+  <div class="wrap">
+    <span class="kicker">Appendix A</span>
+    <h2>The Lingo Decoder</h2>
+    <p style="margin-top:22px">Every one of these will get used in a conference session or a podcast as if everyone already knows it. Now you do.</p>
+
+    <div class="panel lingo">
+      <dl>
+        <dt>Assimilation</dt>
+        <dd>The whole process of moving someone from first visit to belonging. Clinical word, unavoidable in this field. Curtis prefers naming it as journeys from the guest's point of view.</dd>
+
+        <dt>First Impressions</dt>
+        <dd>The umbrella name for the ministry. Parking, greeting, ushering, information, kids check in. Often used interchangeably with Guest Services or Guest Experience.</dd>
+
+        <dt>Street to Seat</dt>
+        <dd>The arrival sequence, from the moment a guest turns off the road to the moment they sit down. From Nelson Searcy, <em>Fusion</em>, 2008. Curtis updated it to Screen to Seat because the visit now starts online.</dd>
+
+        <dt>Greeted, Directed, Treated, Seated</dt>
+        <dd>Searcy's four things a guest needs during arrival. The best diagnostic in the field.</dd>
+
+        <dt>The Front Door / The Back Door</dt>
+        <dd>Front door is how people come in. Back door is how they leave. "Closing the back door" means reducing dropoff after the first few visits.</dd>
+
+        <dt>Secret Shopper / Mystery Worshiper</dt>
+        <dd>An outsider paid or asked to attend anonymously and report on the experience. Greg Atkinson built a career doing this.</dd>
+
+        <dt>Connect Card / Communication Card</dt>
+        <dd>The card in the seat that captures guest information. Increasingly a QR code to a mobile form rather than a card people write on.</dd>
+
+        <dt>Next Step</dt>
+        <dd>The single thing you ask a guest to do next. Singular on purpose.</dd>
+
+        <dt>Swim the Lobby</dt>
+        <dd>A volunteer with no station whose whole job is to move through the room and find people standing alone.</dd>
+
+        <dt>Wayfinding</dt>
+        <dd>Signage and cues that get someone from where they are to where they need to be without asking.</dd>
+
+        <dt>Pipeline</dt>
+        <dd>Used two ways: the guest pipeline (visitor to member) and the volunteer pipeline (interested to serving to leading). Both need watching.</dd>
+
+        <dt>Top of Funnel</dt>
+        <dd>Borrowed from sales. The widest part, meaning total new people who came in. Carreras's point is that most churches count who filled out a card and never count who actually walked in.</dd>
+
+        <dt>Warm Lead</dt>
+        <dd>Also from sales. Someone who has already signaled interest. Some churches now invest follow up in warm leads rather than every first time attender.</dd>
+
+        <dt>F.O.R.D.</dt>
+        <dd>Friends, Occupation, Recreation, Dreams. A small talk ladder for volunteers who freeze.</dd>
+
+        <dt>Huddle</dt>
+        <dd>The short pre service team meeting. Where vision, assignments, and prayer happen. Atkinson treats it as non optional.</dd>
+
+        <dt>Philoxenia</dt>
+        <dd>Greek. Love of stranger. The word behind "hospitality" in Romans 12:13 and Hebrews 13:2.</dd>
+      </dl>
+    </div>
+  </div>
+</article>
+
+<!-- ============ LIBRARY ============ -->
+<article class="module" id="library">
+  <div class="wrap">
+    <span class="kicker">Appendix B</span>
+    <h2>The Free Library</h2>
+    <p style="margin-top:22px">Everything below is free. Where a login or a paywall exists, it says so. Start with the top three.</p>
+
+    <div class="panel">
+      <h4>Start Here: The Three That Matter Most</h4>
+      <ul class="plain">
+        <li><strong>IBSA First Impressions Training, Session 1 Workbook.</strong> 42 pages, no login, no email required. Audit checklist, journey map template, four role play drills, six step onboarding framework, team covenant, communication templates. This is the single best free thing in existence on this subject. <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions-Training-Session_1_Work.pdf">Download</a></li>
+        <li><strong>IBSA Session 2 Workbook.</strong> 24 pages. The four stage follow up pathway plus five ready to use scripts you can adapt in an afternoon. <a href="https://www.ibsa.org/wp-content/uploads/2025/06/First-Impressions_Session_2.pdf">Download</a></li>
+        <li><strong>Rich Birch, 21 Easy Ways to Be More First Time Guest Friendly.</strong> The most practical single article written on this. <a href="https://unseminary.com/21-easy-ways-for-your-church-to-be-more-first-time-guest-friendly/">Read</a></li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h4>Free PDFs and Workbooks</h4>
+      <ul class="plain">
+        <li>IBSA, First Impressions That Wow. Volunteer culture, scheduling, four Sunday roles with arrival times, the F.O.R.D. method. <a href="https://www.ibsa.org/wp-content/uploads/2025/03/First_Impressions_That_Wow_Transform_Your_Welcome.pdf">PDF</a></li>
+        <li>IBSA Greeter Training fill in the blanks. Seven short modules on nonverbal communication and reading guest cues. <a href="https://www.ibsa.org/wp-content/uploads/2025/03/IBSA_Greeter_Training_Fill_in_the_Blanks.pdf">PDF</a></li>
+        <li>Life.Church Greeting Team Guidelines. One page role sheet with a stated win and ten behavioral rules. Steal the format. <a href="https://leaders.life.church/wp-content/uploads/2016/09/LC_HT_GreetingTeam.pdf">PDF</a></li>
+        <li>IBSA's parent resource page, with sixteen more free training PDFs including child safety. <a href="https://www.ibsa.org/resource/discipleship-3/">Browse</a></li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h4>Free Video Training</h4>
+      <ul class="plain">
+        <li>ServeHQ, three greeter videos, no login: Making a Lasting First Impression, Be Mindful of These 8 Things, 7 Pitfalls Greeters Should Avoid. <a href="https://servehq.church/free/church-greeter-training/">Watch</a></li>
+        <li>Life.Church Open, Greeters and Guest Services. Four videos plus a question guide. Free account required. <a href="https://open.life.church/resources/3763-greeters-and-guest-services">Watch</a></li>
+        <li>IBSA video sessions 1 through 3 and 4 through 6. Login required, workbooks are not. <a href="https://www.ibsa.org/resource/discipleship/">Session 1</a> &middot; <a href="https://www.ibsa.org/resource/discipleship-2/">Session 2</a></li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h4>Practitioners Worth Following</h4>
+      <ul class="plain">
+        <li><strong>Greg Atkinson</strong>, Worship Impressions. Church secret shopper. Best free reads: <a href="https://www.xpastor.org/strategy/growth-vision/five-tips-from-a-secret-shopper/">Five Tips</a>, <a href="https://churchleaders.com/pastors/pastor-articles/138174-lessons-from-a-church-secret-shopper.html">Lessons from a Secret Shopper</a>, <a href="https://churchleaders.com/outreach-missions/outreach-missions-how-tos/151528-4-keys-to-creating-irresistible-church.html">4 Keys to an Irresistible Church</a>. His book is <em>Secrets of a Secret Shopper</em> (Rainer, 2016), <a href="https://archive.org/details/secretsofsecrets0000atki">borrowable free at the Internet Archive</a>. He also keeps a <a href="https://gregatkinson.com/first-impressions-church-guest-experience-podcasts-greg-atkinson-church-secret-shopper/">list of around 21 free podcast appearances</a>, including one specifically on whether this works in a small church.</li>
+        <li><strong>Rich Birch</strong>, unSeminary. Free podcast and blog, weekly. Beyond the 21 Ways: <a href="https://unseminary.com/5-training-experiences-to-help-your-team-feel-like-first-time-guests/">5 Training Experiences</a>, <a href="https://unseminary.com/7-other-weekend-metrics-church-leaders-should-study-regularly/">7 Weekend Metrics</a>, <a href="https://unseminary.com/stop-losing-first-time-guests-whats-working-at-the-front-door-right-now/">What Is Working at the Front Door Right Now</a>.</li>
+        <li><strong>Greg Curtis</strong>, Eastside Christian Church, and <strong>Tommy Carreras</strong>. The three journeys model and the sharpest tactical diagnosis available. <a href="https://unseminary.com/theyre-looking-for-god-dont-miss-them-fixing-your-churchs-assimilation-problem-with-greg-curtis-tommy-carreras/">Full episode and transcript</a>.</li>
+        <li><strong>Brady Shearer</strong>, Pro Church Tools. Best on the digital mechanics of the card and the follow up. <a href="https://prochurchtools.com/blog-post/church-visitor-follow-up">Follow Up System</a>, <a href="https://prochurchtools.com/blog-post/modern-church-connection-cards-examples">Connection Cards</a>. Note his tooling recommendations point to his own product.</li>
+        <li><strong>Nelson Searcy</strong>, <em>Fusion</em> (Regal, 2008). Where street to seat comes from. Book is paid; the core content is summarized free at <a href="https://28nineteen.com/fusion-seven-minutes-and-counting/">28nineteen.com</a>.</li>
+        <li><strong>Thom Rainer</strong>, Church Answers. Worth reading partly because he is honest about his own data. <a href="https://churchanswers.com/2014/11/01/top-ten-ways-churches-drive-away-first-time-guests/">Top Ten Ways Churches Drive Away First Time Guests</a>, which he openly labels an unscientific Twitter poll.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h4>Conferences and Events</h4>
+      <ul class="plain">
+        <li>First Impressions Online, a free one day virtual conference. Replays are paid. <a href="https://www.firstimpressions.church/first-impressions-online">Details</a></li>
+        <li>First Impressions Conference, in person, paid. <a href="https://firstimpressionsconference.com/">Details</a></li>
+        <li>Vanderbloemen's First Impressions podcast episode with Greg Atkinson. Single episode, free. <a href="https://www.vanderbloemen.com/resources/first-impressions-podcast/">Listen</a></li>
+      </ul>
+    </div>
+
+    <div class="flag">
+      <h4>What We Checked and Could Not Verify</h4>
+      <p>Three things circulate widely in this world that we could not trace to any primary source, and this course deliberately does not teach them: a "6 ingredients of an obsessive first time guest experience" list attributed to Rich Birch (the session exists, the list is not published anywhere), a "10 foot rule" often attributed to Greg Atkinson (it appears to be a Walmart retail convention, not his), and a "90 second encounter" rule (used in marketing copy but defined nowhere). If someone quotes these to you, ask where it is written down.</p>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <div class="wide">
+    <div style="flex:1;min-width:260px">
+      <div class="motto">All for Him. All Excellent. All In.</div>
+      <p>Valor Church</p>
+      <p>Excel Academy Charter School</p>
+      <p>11500 W 84th Ave, Arvada, CO 80005</p>
+      <p>Sundays at 8:30 and 10:30</p>
+    </div>
+    <div style="flex:1;min-width:220px">
+      <h4>Four Pillars</h4>
+      <p>Unapologetic Preaching</p>
+      <p>Unashamed Worship</p>
+      <p>Unafraid Witness</p>
+      <p>Unceasing Prayer</p>
+    </div>
+    <div style="flex:1;min-width:200px">
+      <h4>Find Us</h4>
+      <p><a href="https://valor.church">valor.church</a></p>
+      <p>@myvalorchurchco</p>
+      <p style="margin-top:22px;font-size:13px;color:rgba(255,255,255,.5)">Stop Drifting. Build Resilient Faith.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// In-session progress only. Print the page if you want a permanent record.
+document.querySelectorAll('.checklist input[type=checkbox]').forEach(function(box){
+  box.addEventListener('change', function(){ /* visual state handled in CSS */ });
+});
+// Smooth active-state on nav
+var links = document.querySelectorAll('.nav-links a');
+var sections = Array.prototype.map.call(links, function(a){
+  return document.querySelector(a.getAttribute('href'));
+});
+window.addEventListener('scroll', function(){
+  var y = window.scrollY + 120, active = -1;
+  sections.forEach(function(s,i){ if(s && s.offsetTop <= y) active = i; });
+  links.forEach(function(a,i){
+    a.style.color = (i === active) ? '#4D3033' : '';
+    a.style.borderColor = (i === active) ? 'rgba(0,0,0,.14)' : 'transparent';
+  });
+}, {passive:true});
+</script>
+</body>
+</html>
