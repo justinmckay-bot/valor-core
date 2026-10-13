@@ -1,14 +1,14 @@
 # BRAND.md (Valor Church)
 
-**Version 2026-10-06. Open-space system. Street-to-Seat is the key reference. This is the only current brand document.**
+**Version 2026-10-12. Open-space system. Street-to-Seat is the key reference. This is the only current brand document.**
 
 It replaces the "two visual modes" brand.md (Dark Authority / Warm Clarity, dated 2026-08-19) that still sits in the Valor Core exports. That system is retired: no dark header bars, no dark footer bars, no burgundy rails down the page edge, no khaki strips, no ghost V watermark, no boxes drawn around copy. The print skill moved to this direction on 2026-05-25. This file makes it the rule for everything, not just PDFs.
 
-**Scope: everything Valor produces.** PDFs, Word docs, HTML documents, meeting agendas, courses, handouts, one-pagers, slides, expectations sheets, staff and partner documents, internal working docs, the newsletter. If it has Valor's name on it, it follows this file. (The live valor.church pages run on their own locked Divi system and are not changed by this file. Web is Justin's lane.)
+**Scope: everything Valor produces.** PDFs, Word docs, HTML documents, meeting agendas, courses, handouts, one-pagers, slides, expectations sheets, staff and partner documents, internal working docs, the newsletter. If it has Valor's name on it, it follows this file. (The live valor.church website is the one exception. See "Website exception" below.)
 
 **The key reference: Street-to-Seat.** `Street-to-Seat-Course.html` is the Valorizing style. Every deliverable, in every format, should look like it came out of that file: white page, black type, big burgundy module numbers, ALL CAPS Archivo heads, PT Serif body, hairlines and space doing the structure. When in doubt, open it and match it. A clean copy with the footer and panel boxes corrected lives in every Valor Core folder at `design-reference/Street-to-Seat-Course.html`.
 
-Secondary references, same system: `Seat-to-Circle-Course.html` and `meetings/2026-09-14_glenn-conversation-agenda.html`.
+Secondary references, same system: Seat to Circle (only exists as a PDF, `~/Desktop/Valor-Outputs/Valor Admin & Elders/Seat to Circle - Valor Discipleship Course.pdf`; its boxed "Read this before you repeat any statistic" panel is struck) and `meetings/2026-09-14_glenn-conversation-agenda.html`.
 
 Corrections to the original reference files: they end in a black filled footer, the agenda has a burgundy full-width "letter" band, and Street-to-Seat draws a four-sided box around its panels and a burgundy outline around its flags. All of those moves are struck. Footer is text on white. Big statements get space and type, not a colored band. Panels and flags get a top rule, not a box.
 
@@ -25,6 +25,36 @@ This applies to every document, across the board, with no exceptions and no "jus
 The one colored line the system keeps is the 3px burgundy rail on the left of a pull statement, exactly as Street-to-Seat uses it. That is type punctuation, not trim. Nothing else gets a colored line.
 
 If a template, skill, older file, or outside design tool produces any of these, it is wrong. Fix the output, do not ship it.
+
+---
+
+## Website exception (valor.church only)
+
+The live valor.church site keeps its filled black footer and its burgundy section bands. That is true for the website and nothing else. It runs on its own locked Divi system (`BRAND-WEB.md`, the `valor-page-redesign` skill), and web is Justin's lane.
+
+Never carry the site's footer or bands into a document, PDF, slide, handout, agenda, course, email, or internal file. "It matches the website" is not a reason to fill a footer.
+
+Social graphics (carousels, Decide Saturday, reels) and the sermon screen slides are photo and screen media with their own skills. They are not documents and are not changed by this file.
+
+---
+
+## Where design rules live (update all of these together)
+
+If the rule changes, every one of these changes the same day. This list is the map.
+
+| Place | What it is |
+|---|---|
+| `BRAND.md` (this file) | The rulebook. Wins every conflict. |
+| `BRAND-HANDOFF-FOR-CLAUDE-DESIGN.md` | Short version for outside design tools |
+| `CLAUDE.md` (Brand rules, Layout line) | One-line summary every session reads |
+| `Street-to-Seat-Course.html` and `*/design-reference/Street-to-Seat-Course.html` | The visual reference |
+| `BRAND-WEB.md` | Website only |
+| `skills/valor-print-design-skill.md`, `~/.claude/skills/valor-print-design-skill/`, `~/Applications/valor-church-skills/valor-print-design-skill/` | PDF and Word skill (three copies) |
+| `.claude/skills/expectations-sheet/` (SKILL.md and `reference-glenn.html`) | Expectations sheet template |
+| `~/Applications/valor-core/` (`brand.md`, `colors_and_type.css`, `CLAUDE.md`) | The team canon every staff workspace reads |
+| `valor-core-for-steve/`, `valor-core-for-dylan/` | Staff starter folders |
+| `~/Desktop/Valor-Outputs/06-Brand-Media/` | Desktop mirror of this file and the handoff |
+| Claude memory (`feedback_open_space_brand_system`, `feedback_valor_visual_language`) | Pointers only, never the rule itself |
 
 ---
 
