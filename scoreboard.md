@@ -57,7 +57,7 @@ Before leaving the room, every decision gets four answers: **What** is the decis
 | First Step to Team | Next Steps class, then Four Chambers placement | Nathan Ewing |
 | Guest capture | Connect cards scanned post-service into the Valor Dashboard | Finance team, then Glenn |
 | Follow-Up rhythm | First-time guest follow-up within 24 hours | Justin / Nathan |
-| Sermon planning pipeline | Tuesday brief, Thursday/Friday writing, slides | Justin |
+| Sermon planning pipeline | Tuesday sermon writing (protected), slides | Justin |
 | Production transitions | Mobile church load-in/teardown at Excel Academy, two connex trailers | Glenn / volunteer team |
 | Volunteer coverage | Tracked against the two-service model (launched Aug 30, 2026) | Glenn / Nathan |
 | Campus / Service | Two Sunday services (8:30 and 10:30) from Aug 30, 2026 | All |

@@ -281,7 +281,7 @@ The shared staff rhythm your agent should assume:
 - **Wednesday nights:** youth night.
 - **Sunday:** Sunday. Services, guests, load-in and teardown (mobile church).
 
-Justin's own rhythm to respect when you need him: Wednesday is his day off, and Thursday/Friday are sermon-writing days. Don't stack heavy asks against those unless it's urgent.
+Justin's own rhythm to respect when you need him: Tuesday is his sermon-writing day and Wednesday is his day off. Protect both. He is on site Tuesdays, so if something is truly vital you can reach him; otherwise it waits for Thursday. Thursday and Friday are open for meetings.
 
 ## Daily rhythm
 
