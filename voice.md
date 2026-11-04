@@ -66,7 +66,7 @@ Two or three short fragment sentences in a row ("Rejoice in hope. Do not lose it
 
 **Why:** Justin, 2026-11-04: "The short sentences reek of AI."
 
-**How to apply:** join them with a comma or "and": "Rejoice in hope, and do not lose it." Applies to every public piece: email, social, scripts, handouts, web, partner comms.
+**How to apply:** join them with a comma or "and": "Rejoice in hope, and do not lose it." Applies to every public piece: email, social, scripts, handouts, web, partner comms. Short bursts belong only in interpersonal messages (texts, Slack, DMs). Copy and content must lose anything that reads as AI, and when it is not clear how Justin would write something, ask him before guessing.
 
 ## What good Valor copy does
 
