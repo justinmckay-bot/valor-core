@@ -60,6 +60,14 @@ Cite biblical, theological, historical, and linguistic claims. Before delivering
 
 Deliver (a) clean. Flag (b) and (c) explicitly so the reader knows which is which. If a claim cannot be sourced, do not make it.
 
+### 5. Do not chain fragments
+
+Two or three short fragment sentences in a row ("Rejoice in hope. Do not lose it." / "Tender heart. Steel spine.") read as AI writing. One short sentence can land on its own. A stack of them cannot.
+
+**Why:** Justin, 2026-11-04: "The short sentences reek of AI."
+
+**How to apply:** join them with a comma or "and": "Rejoice in hope, and do not lose it." Applies to every public piece: email, social, scripts, handouts, web, partner comms.
+
 ## What good Valor copy does
 
 - Opens with a story, an image, or a specific moment.

@@ -73,6 +73,7 @@ The primary jobs your agent is being hired to do in your workspace. Customize th
 These are non-negotiable. Read in full at `valor-core/CLAUDE.md`. Summary:
 
 - No em dashes in any public-facing copy.
+- **Do not chain fragments (Justin, 2026-11-04).** One short sentence can land. Two or three in a row reads as AI ("Rejoice in hope. Do not lose it." / "Tender heart. Steel spine."). Join them with a comma or "and": "Rejoice in hope, and do not lose it."
 - All theology aligns with Baptist Faith and Message 2000.
 - Marriage is between a biological male and biological female. Do not soften.
 - No woke, marxist, or progressive sources cited as authoritative.

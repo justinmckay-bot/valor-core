@@ -34,6 +34,7 @@ These come from `voice.md` and `convictions.md` and apply everywhere:
 7. **Default calendar tool is Google Calendar.** Never Apple Calendar.
 8. **Always use CSB translation** unless Justin specifies otherwise.
 9. **Counseling and pastoral confidences never enter AI, ever.** Do not paste, type, summarize, transcribe, or store counseling sessions, care conversations, confessions, disciplinary matters, or anything shared with you in pastoral confidence into any AI tool, chat, or workspace file. These stay off the system entirely. If you want help thinking through a care situation in general terms, do it with no names and no identifying detail.
+10. **Do not chain fragments in public copy (Justin, 2026-11-04).** Two or three short sentences in a row ("Rejoice in hope. Do not lose it.") read as AI. Join them: "Rejoice in hope, and do not lose it."
 
 ## Your authority: draft everything, release nothing major
 
